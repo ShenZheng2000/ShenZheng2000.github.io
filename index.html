@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Shen Zheng</title>
+  
+  <meta name="author" content="Shen Zheng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Shen Zheng</name>
+              </p>
+
+              <p>I am a first-year Master of Science in Computer Vision (MSCV) student 
+                at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>.
+
+               I obtained my bachelor's degree in mathematical sciences 
+               from <a href="https://www.wku.edu.cn/">Wenzhou-Kean University</a>. 
+
+              </p>
+              <p>
+                My area of interest is autonomous driving with bad weather and sub-optimal illuminations. 
+                During my undergrad, I have worked with <a href="https://wku.edu.cn/faculty/gaurav-gupta/"> Dr. Gaurav Gupta </a>
+                on efficient network training, image restoration & enhancement & generation, point cloud analysis, and medical image segmentation, 
+              </p>
+
+              <p>
+                I have also attended the <a href="https://ndi-sa.nd.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10096">iSURE</a> program 
+                provided by the <a href="https://www.nd.edu/">University of Notre Dame</a>,
+                where I worked with <a href="https://sites.nd.edu/chaoli-wang/">Dr. Chaoli Wang</a> on implicit representation for isosurface rendering. 
+              </p>
+
+                <p>
+                  Besides, I have worked in the perception team in <a href="https://www.momenta.cn/">Momenta</a>, where I was responsible for 
+                  data augmentation, data autolabeling, data cleaning, and object detection for traffic lights. 
+                </p>
+                
+
+              <p>
+                I am looking for a summer internship position in 2023. If interested, feel free to drop me an email (shenzhen@andrew.cmu.edu).
+              </p>
+              <p style="text-align:center">
+                <!-- <a href="shenzhen@andrew.cmu.edu">Email</a> &nbsp/&nbsp -->
+                <a href="images/Self/CV_ShenZheng.pdf">Resume</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=QV13_T8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/ShenZheng2000">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/shen-lebron-zheng-b05128184/">Linkedin</a> &nbsp/&nbsp 
+                <a href="https://leetcode.com/LebronZheng/">Leetcode</a> &nbsp/&nbsp
+                <a href="https://www.youtube.com/channel/UCwsy6n3UFfK2EavTfK1bI5w/playlists">YouTube</a>
+              </p>
+              
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/Self/Image_ShenZheng.jpg"><img style="width:75%;max-width:75%" alt="profile photo" src="images/Self/Image_ShenZheng.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publication</heading>
+              <p>
+                <!-- Maybe: summarize main research points -->
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      
+
+        <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='wacv'>
+              <img src="images/PointNorm/PointNorm.png" width="160"></div>
+              <img src='images/PointNorm/PointNorm.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function Point_cloud_start() {
+                document.getElementById('wacv').style.opacity = "1";
+              }
+
+              function Point_cloud_stop() {
+                document.getElementById('wacv').style.opacity = "0";
+              }
+              Point_cloud_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+              <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
+            <!-- </a> -->
+            <br>
+            <strong>Shen Zheng</strong>,
+            Jinqian Pan,
+            Changjie Lu,
+            Gaurav Gupta
+            <br>
+            <em>ICRA 2023 (Under Review) </em>
+            <br>
+            <a href="https://arxiv.org/abs/2207.06324">Paper</a> /
+            <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> 
+
+            <p>
+              Introduce a DualNorm module (Point Norm & Reverse Point Norm) which leverages local mean and global standard deviation 
+              to effectively and efficiently address the irregular point cloud in point cloud analysis. 
+            </p>
+
+          </td>
+        </tr>
+
+        <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='night'>
+              <img src="images/SGZ/F1.png" width="160"></div>
+              <img src='images/SGZ/F1Crop.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function LLIE_start() {
+                document.getElementById('night').style.opacity = "0";
+              }
+
+              function LLIE_stop() {
+                document.getElementById('night').style.opacity = "1";
+              }
+              LLIE_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="images/SGZ/SGZ.pdf"> -->
+              <papertitle>Semantic-Guided Zero-Shot Learning for Low-Light Image/Video Enhancement</papertitle>
+            <!-- </a> -->
+            <br>
+            <strong>Shen Zheng</strong>, 
+            Gaurav Gupta
+            <br>
+            <em>WACV 2022</em>
+            <br>
+            <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/papers/Zheng_Semantic-Guided_Zero-Shot_Learning_for_Low-Light_ImageVideo_Enhancement_WACVW_2022_paper.pdf">Paper</a> /
+            <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> /
+            <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> /
+            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> /
+            <a href="https://www.youtube.com/watch?v=SrNMPqQFncY">Video</a>
+            <p>
+              Propose a semantic-guided zero-shot low-light enhancement network which is trained 
+              with enhancement factor extraction, recurrent image enhancement, and unsupervised semantic segmentation
+            </p>
+          </td>
+        </tr>
+
+
+      
+      <tr onmouseout="rain_stop()" onmouseover="rain_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='rainy'>
+            <img src="images/SAPNet/rainy.png" width="160"></div>
+            <img src='images/SAPNet/derain.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function rain_start() {
+              document.getElementById('rainy').style.opacity = "0";
+            }
+
+            function rain_stop() {
+              document.getElementById('rainy').style.opacity = "1";
+            }
+            rain_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
+            <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
+          <!-- </a> -->
+          <br>
+          <strong>Shen Zheng</strong>, 
+          Changjie Lu, 
+          Yuxiong Wu, 
+          Gaurav Gupta
+          <br>
+          <em>WACV 2022</em>
+          <br>
+          <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf">Paper</a> /
+          <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> /
+          <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> /
+          <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a> /
+          <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a>
+          <p>
+            Present a segmentation-aware progressive network for image-deraining using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation. 
+          </p>
+        </td>
+      </tr>
+
+
+
+
+
+
+        <!-- Maybe: Use images, not figures -->
+          <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='UDA_VAE++'>
+                <img src="images/UDA_VAE++/UDA_VAE++.png" width="160"></div>
+                <img src='images/UDA_VAE++/UDA_VAE++.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function UDA_start() {
+                  document.getElementById('mine').style.opacity = "1";
+                }
+
+                function UDA_stop() {
+                  document.getElementById('mine').style.opacity = "0";
+                }
+                UDA_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<!-- <a href="https://arxiv.org/pdf/2204.09334.pdf"> -->
+                <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
+                  Mutual Information Maximization</papertitle>
+              <!-- </a> -->
+              <br>
+              Changjie Lu, 
+              <strong>Shen Zheng</strong>, 
+              Gaurav Gupta
+              <br>
+              <em>CVPR 2022</em>  
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> /
+              <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> /
+              <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> /
+              <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
+              <p>
+                Introduce UDA-VAE++, an unsupervised domain adaptation framework that leverages mutual information estimation and maximization and sequential reparameterization for cardiac segmentation.
+              </p>
+            </td>
+          </tr>
+
+
+
+          <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='acml'>
+                <img src="images/AS_IntroVAE/AS_IntroVAE.JPG" width="160"></div>
+                <img src='images/AS_IntroVAE/AS_IntroVAE.JPG' width="160">
+              </div>
+              <script type="text/javascript">
+                function ACML_start() {
+                  document.getElementById('acml').style.opacity = "1";
+                }
+
+                function ACML_stop() {
+                  document.getElementById('acml').style.opacity = "0";
+                }
+                UDA_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
+                <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
+              <!-- </a> -->
+              <br>
+              Changjie Lu, 
+              <strong>Shen Zheng</strong>, 
+              Zirui Wang,
+              Omar Dib,
+              Gaurav Gupta
+              <br>
+              <em>ACML 2022</em>
+              <br>
+							<!-- <a href="">code</a> / -->
+              <a href="https://arxiv.org/pdf/2206.13903.pdf">Paper</a> /
+              <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">Slides</a>
+              <p>
+                Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
+                collapse and the vanishing gradient problem in image generation in one go. 
+              </p>
+            </td>
+          </tr>
+
+
+ 
+    
+          <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blur'>
+                <img src="images/Deblur_YOLO/baby_blur.png" width="160"></div>
+                <img src='images/Deblur_YOLO/baby_deblurYolo.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ijcnn_start() {
+                  document.getElementById('blur').style.opacity = "0";
+                }
+
+                function ijcnn_stop() {
+                  document.getElementById('blur').style.opacity = "1";
+                }
+                ijcnn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
+                <papertitle>Deblur-YOLO: Real-Time Object Detection
+                  with Efficient Blind Motion Deblurring</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>, 
+              Yuxiong Wu,
+              Shiyu Jiang,
+              Changjie Lu, 
+              Gaurav Gupta
+              <br>
+              <em>IJCNN 2021</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> /
+              <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
+              <p>
+              Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
+              to deal with photographs corrupted by motion blur.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="EES_stop()" onmouseover="EES_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='EES'>
+                <img src="images/EES/EES.png" width="160"></div>
+                <img src='images/EES/EES.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function EES_start() {
+                  document.getElementById('EES').style.opacity = "1";
+                }
+
+                function EES_stop() {
+                  document.getElementById('EES').style.opacity = "0";
+                }
+                UDA_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
+                <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>, 
+              Liwei Wang,
+              Gaurav Gupta
+              <br>
+              <em>CVIP 2020</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+							<!-- <a href="">code</a> / -->
+              <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> /
+              <a href="images/EES/EES_Slides.pdf">Slides</a>
+              <p>
+              Introduce an efficient Convolutional Neural Network with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
+              </p>
+            </td>
+          </tr>
+
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <heading>Experiences</heading>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Momenta/Momenta.png" style="width: 185px;">
+            </td>
+            <td width="75%" valign="center">
+              <strong>Computer Vision Engineer, Perception </strong> at <a href="https://www.momenta.cn/">Momenta</a>
+
+              <p>
+                Director: <a href="https://scholar.google.com.sg/citations?user=Wo5Cem4AAAAJ&hl=en">Dr. Wangjiang Zhu</a>
+                 
+              </p>
+
+              <p>
+              Responsible for long-tailed data augmentation, training data auto-labeling and cleaning, and model evaluation for traffic light detection algorithms.
+            </p>
+
+            <p>
+              Implemented CycleGAN to conduct unsupervised data augmentation, converting traffic light bulbs from left arrow to round & leftUturn arrow.
+            </p>
+
+            <p>
+              Constructed a traffic light auto-label model using quantized VoVNet-57, filtering 14,618 incorrect annotations from 1,160,513 labeled frames.
+            </p>
+
+            <p>
+              Increased the classification accuracy for leftUturn traffic light from 78.41% to 87.27%, and the mean average precision from 93.01% to 94.80%.
+            </p>
+            </td>
+          </tr>
+
+            
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/UND/UND.png" style="width: 185px;">
+            </td>
+            <td width="75%" valign="center">
+              <strong> Research Assistant </strong> at <a href="https://www.nd.edu/">University of Notre Dame</a>
+
+              <p>
+                Supervisor: <a href="https://sites.nd.edu/chaoli-wang/">Dr. Chaoli Wang</a>
+                 
+              </p>
+
+              <p>
+              Developed a fully convolutional neural network with Siren activation function to render isosurfaces with image resolution, viewpoints and isovalue.
+            </p>
+
+              <p>
+              Leveraged Greene's bisection method and Jacobian matrix's eigenvalue for critical point detection and classification in the simulated 3D isosurface.
+            </p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/China_Life/China_Life.png" style="width: 185px;">
+            </td>
+            <td width="75%" valign="center">
+              <strong>Sales Analyst Intern </strong> at <a href="https://www.chinalife.com.hk/zh-cn">China Life insurance Company</a>
+
+              <p>
+                Applied K-means clustering model to classify text data statewide as three significant categories to eliminate the risk from over 20,000 unannounced expired insurance from 7 cities.
+              </p>
+
+              <p>
+                Employed t-test and Adjusted R Squared to help Sales Manager and General Manager deciding the bonus percentage for consecutive monthly sales as 6.00%.
+              </p>
+
+            </td>
+          </tr>
+
+
+
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Services</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Services/CVF.jpg" style="width: 185px;"></td>
+            <td width="75%" valign="center">
+
+              <strong>Conference Reviewers</strong>: 
+              <br>
+              <a href="https://sites.google.com/view/cvip-2021/home">CVIP 2021</a>, 
+              <a href="https://vnit.ac.in/cvip2022/">CVIP 2022</a>, 
+              <a href="https://aaai.org/Conferences/AAAI-22/">AAAI 2022</a>, 
+              <a href="https://wacv2023.thecvf.com/home">WACV 2023</a>
+              <br>
+              <br>
+
+              <strong>Journal Reviewers</strong>:
+              <br>
+              <a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems">IEEE TNNLS</a>
+              
+              <br>
+              <br>
+
+              <strong>Session Chair</strong>:
+              <br>
+              <a href="https://dblp.org/db/conf/ijcnn/ijcnn2021.html">IJCNN 2021</a>
+              <br>
+            </td>
+          </tr>
+
+
+
+
+      
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Services/Fudan.png" style="width: 185px;">
+            </td>
+            <td width="75%" valign="center">
+              <strong> Invited Speaker </strong> at <a href="https://www.fudan.edu.cn/en/">Fudan University</a>
+              <br>
+              <br>
+              <strong> Topic </strong>: <a href="images/Services/Slides_Fudan.pdf">Image Processing with Machine Learning</a>
+              <br>
+            </td>
+          </tr>
+
+
+
+
+  
+          
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Services/AI_Lab.jpg" style="width: 185px;"></td>
+            <td width="75%" valign="center">
+              <strong>Co-founder</strong> of <a href="https://github.com/WKUAILAB">WKU AI-LAB</a>
+
+              <br>
+              <br>
+              Offered AI Tutorials in Computer Vision and Natural Language Processing for undegraduate students. 
+              <br>
+              
+              <br>
+              Collected state-of-the-art paper lists for paper reading, paper discussion, and literature review. 
+
+              <!-- <br>
+              I take the responsibility of 
+              <a href="https://github.com/WKUAILAB/AI_Tutorial/tree/main/CV">Computer Vision</a>. -->
+            </td>
+          </tr>
+
+
+                      
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Services/Leetcode.jpg" style="width: 185px;">
+            </td>
+            <td width="75%" valign="center">
+              <strong> Content Creator</strong>: 
+              <br>
+              Made 100+ <a href="https://leetcode.com/">YouTube</a> video solutions for <a href="https://leetcode.com/">Leetcode</a> algorithms questions.
+            </td>
+          </tr>
+
+
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <heading>Skills</heading>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Skills/Skills.jpeg" style="width: 185px;"></td>
+            <td width="75%" valign="center">
+              <!-- <a href="https://github.com/WKUAILAB">WKU AI-LAB</a> -->
+
+              <strong>Programming Languages</strong>: 
+              <br>
+              Python, R, Java, C++, Matlab, HTML, Mathematica, Shell, LaTeX, Markdown
+              <br>
+              <br>
+
+              <strong>Frameworks & Platforms</strong>: 
+              <br>
+              Pytorch, TensorFlow, Keras, Ubuntu, Docker, Git, ONNX, CUDA
+              <br>
+              <br>
+
+
+              <strong>Libraries</strong>: 
+              <br>
+              Scikit-Learn, SciPy, NumPy, OpenCV, Matplotlib, Pandas
+              <br>
+              <br>
+            </td>
+          </tr>
+
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <heading>Fun Facts</heading>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Fun_Facts/Fun_Facts.jpg" style="width: 185px;"></td>
+              <td width="75%" valign="center">
+                <!-- <a href="https://github.com/WKUAILAB">WKU AI-LAB</a> -->
+  
+                <strong>Languages</strong>: 
+                <br>
+                Chinese, English, Spanish, Russian, Arabic
+                <br>
+                <br>
+
+                <strong>Sports</strong>: 
+                <br>
+                Basketball, Table Tennis, Swimming, Cycling, Climbing
+                <br>
+                <br>
+  
+                <strong>Beliefs</strong>: 
+                <br>
+                <a href="https://www.researchgate.net/profile/Liwei-Wang-15">立威思想</a> &
+                <a href="https://www.linkedin.com/in/hang-xie/">谢航精神</a> &
+                <a href="http://relic.wang/">永富方法</a> &
+                <a href="https://yunuoch.github.io/">予诺三观</a> &
+                <a href="https://www.linkedin.com/in/haoran-qian/?trk=public_profile_browsemap&originalSubdomain=cn">浩然哲学</a>
+                <br>
+
+  
+
+                <br>
+              </td>
+            </tr>
+  
+
+
+          <tr>
+            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+							<heading>Visitors</heading>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://www.revolvermaps.com/livestats/5xcf5hcpcuz/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5xcf5hcpcuz.png" width="256" height="128" alt="Map" style="border:0;"></a>      </td>
+            </td>
+          </tr>
+    </tr>
+  </table>
+</body>
+
+</html>
