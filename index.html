@@ -25,7 +25,7 @@
                 in Computer Vision (<a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">MSCV</a>) student 
                 at Carnegie Mellon University (<a href="https://www.cmu.edu/">CMU</a>), with a GPA of 4.00. 
                 I am currently working with <a href="http://www.cs.cmu.edu/~srinivas/"> Dr. Srinivasa Narasimhan </a>
-                on image-to-image translation for autonomous driving with bad weather and adverse illuminations. 
+                on image-to-image translation and unsupervised domain adaptation for autonomous driving with bad weather and adverse illuminations. 
               </p>
 
               <p>
@@ -80,6 +80,50 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="TPSeNCE_stop()" onmouseover="TPSeNCE_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/TPSeNCE/Titlepage.png" width="160"></div>
+                <img src='images/TPSeNCE/Titlepage.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function TPSeNCE_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function TPSeNCE_stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                TPSeNCE_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <papertitle>TPSeNCE: Towards Artifact-Free Realistic Rain Generation</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>,
+                    Changjie Lu,
+                    Srinivasa Narasimhan
+              <br>
+              <em> Under Review </em>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Previous image-to-image translation methods generate artifacts and distortions, and cannot control the amount of generated rains. 
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions during rain generation.  
+                Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to optimize the amounts of generated rain. 
+                Evaluate rain generation performances using rain removal and object detection. 
+              </p>
+  
+            </td>
+          </tr>
       
 
           <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()">
@@ -111,7 +155,7 @@
               Changjie Lu,
               Gaurav Gupta
               <br>
-              <em> TIP (Under Review) </em>
+              <em> TNNLS (Under Review) </em>
               <br>
               <a href="https://arxiv.org/abs/2212.10772">Paper</a> /
               <a href="https://github.com/ShenZheng2000/LLIE_Survey">Code</a>
@@ -160,7 +204,7 @@
             Changjie Lu,
             Gaurav Gupta
             <br>
-            <em> Under Review </em>
+            <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
             <br>
             <a href="https://arxiv.org/abs/2207.06324">Paper</a> /
             <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> 
