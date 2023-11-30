@@ -23,9 +23,9 @@
 
               <p>I am a Master of Science
                 in Computer Vision (<a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">MSCV</a>) student 
-                at Carnegie Mellon University (<a href="https://www.cmu.edu/">CMU</a>), with a GPA of 4.17/4.33. 
+                at Carnegie Mellon University (<a href="https://www.cmu.edu/">CMU</a>), with a GPA of 4.16/4.33. 
                 I am currently working with <a href="http://www.cs.cmu.edu/~srinivas/"> Dr. Srinivasa Narasimhan </a>
-                on image-to-image translation and unsupervised domain adaptative object detection for autonomous driving in adverse weather and lighting conditions. 
+                on image-to-image translation and unsupervised domain adaptation for autonomous driving in adverse weather and lighting conditions. 
               </p>
 
               <p>
@@ -34,11 +34,11 @@
                 on efficient network training, image restoration & enhancement & generation, and point cloud analysis.
               </p>
 
-              <p>
+              <!-- <p>
                 I have also attended the <a href="https://ndi-sa.nd.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10096">iSURE</a> program 
                 provided by the <a href="https://www.nd.edu/">University of Notre Dame</a>,
                 where I worked with <a href="https://sites.nd.edu/chaoli-wang/">Dr. Chaoli Wang</a> on implicit representation for isosurface rendering. 
-              </p>
+              </p> -->
 
                 <p>
                   Besides, I have worked in the perception team in <a href="https://www.momenta.cn/">Momenta</a>, where I was responsible for 
@@ -46,11 +46,11 @@
                 </p>
                 
 
-                <p><b>I am actively looking for a full-time position starting Jan. 2024.</b> If interested, feel free to drop me an email (shenzhen@andrew.cmu.edu).</p>
+                <!-- <p>If interested in research collaboration, feel free to drop me an email (shenzhen@andrew.cmu.edu).</p> -->
 
               <p style="text-align:center">
-                <!-- <a href="shenzhen@andrew.cmu.edu">Email</a> &nbsp/&nbsp -->
-                <a href="images/Self/CV_ShenZheng.pdf">Resume</a> &nbsp/&nbsp
+                <a href="shenzhen@andrew.cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="images/Self/CV_ShenZheng.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=QV13_T8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/ShenZheng2000">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/shen-lebron-zheng-b05128184/">Linkedin</a> &nbsp/&nbsp 
@@ -70,7 +70,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publication</heading>
+              <heading>Conference Papers</heading>
               <p>
                 <!-- Maybe: summarize main research points -->
               </p>
@@ -78,6 +78,55 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+          <tr onmouseout="Inst_stop()" onmouseover="Inst_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/Inst_Warp/Draw-1.png" width="160"></div>
+                <img src="images/Inst_Warp/Draw-1.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function Inst_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Inst_stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Inst_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>,
+                    Anurag Ghosh,
+                    Srinivasa Narasimhan
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">Under Anonymous Review </strong> 
+              </em>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Object Scale bias challenges contemporal visual recognition systems.
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                Propose a instance-level image warping technique using dataset-specific size statistics to warp images in-place during training to address object scale bias.
+                Integrate image warping and feature unwarping into domain adaptation in a task-agnostic way without warping at test time. 
+              </p>
+  
+            </td>
+          </tr>
+
+
+
 
 
           <tr onmouseout="TPSeNCE_stop()" onmouseover="TPSeNCE_start()">
@@ -100,20 +149,23 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <papertitle>TPSeNCE: Towards Artifact-Free Realistic Rain Generation</papertitle>
+                <papertitle></papertitle>
               <!-- </a> -->
               <br>
               <strong>Shen Zheng</strong>,
                     Changjie Lu,
                     Srinivasa Narasimhan
               <br>
-              <em> Under Anonymous Review </em>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">WACV 2024</strong> 
+              </em>
               <br>
-              <a href="https://mscvprojects.ri.cmu.edu/f23team20/">Webpage</a> /
-              <a href="https://github.com/ShenZheng2000/TPSeNCE/">Code</a>
+              <a href="https://arxiv.org/pdf/2311.00660.pdf">Paper</a> |
+              <a href="https://github.com/ShenZheng2000/TPSeNCE/">Code</a> |
+              <a href="https://www.youtube.com/watch?v=eNS_8fuSLjc">Video</a>
               <p>
                 <strong>Motivation</strong>: 
-                Previous image-to-image translation methods generate artifacts and distortions, and cannot control the amount of generated rains. 
+                Previous image-to-image translation methods produce artifacts and distortions, and lack control over the amount of rain generated. 
               </p>
               <p>
                 <strong>Solution</strong>: 
@@ -146,7 +198,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <papertitle>Low-Light Image and Video Enhancement: A Comprehensive Survey and Beyond</papertitle>
+                <papertitle>Low-Light Image Enhancement: A Comprehensive Survey and Beyond</papertitle>
               <!-- </a> -->
               <br>
               <strong>Shen Zheng</strong>,
@@ -155,17 +207,19 @@
               Changjie Lu,
               Gaurav Gupta
               <br>
-              <em> TNNLS (Under Revision) </em>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">TNNLS (Under Revision)</strong> 
+              </em>
               <br>
-              <a href="https://arxiv.org/abs/2212.10772">Paper</a> /
+              <a href="https://arxiv.org/abs/2212.10772">Paper</a> |
               <a href="https://github.com/ShenZheng2000/LLIE_Survey">Code</a>
               <p>
                 <strong>Motivation</strong>: 
-                Existing image datasets consider either overexposure or underexposure, but not both. Existing video datasets are filmed in fixed positions with little degradation.
+                Existing LLIE datasets focus on either overexposure or underexposure, not both, and usually feature minimally degraded images captured from static positions.
               </p>
               <p>
                 <strong>Solution</strong>: 
-                Present a comprehensive survey of low-light image and video enhancement.
+                Present a comprehensive survey of low-light image enhancement (LLIE).
                 Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure. 
                 Introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
               </p>
@@ -204,13 +258,16 @@
             Changjie Lu,
             Gaurav Gupta
             <br>
-            <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+            <!-- <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">IJCNN 2023 (Oral Presentation)</strong> 
+            </em>
             <br>
-            <a href="https://arxiv.org/abs/2207.06324">Paper</a> /
-            <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> /
+            <a href="https://arxiv.org/abs/2207.06324">Paper</a> |
+            <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> |
             <a href="images/PointNorm/IJCNN_2023_Pre.pdf">Slides</a> 
             <p>
-              <strong>Motivation</strong>: The current point cloud analysis methods cannot well address irregular (i.e., unevenly distributed) point clouds. 
+              <strong>Motivation</strong>: Current point cloud analysis methods struggles with irregular (i.e., unevenly distributed) point clouds. 
             </p>
             <p>
               <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
@@ -245,12 +302,14 @@
             <strong>Shen Zheng</strong>, 
             Gaurav Gupta
             <br>
-            <em>WACV 2022</em>
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">WACV 2022</strong> 
+            </em>
             <br>
-            <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/papers/Zheng_Semantic-Guided_Zero-Shot_Learning_for_Low-Light_ImageVideo_Enhancement_WACVW_2022_paper.pdf">Paper</a> /
-            <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> /
-            <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> /
-            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> /
+            <a href="https://arxiv.org/pdf/2110.00970.pdf">Paper</a> |
+            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> | -->
+            <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> |
+            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> |
             <a href="https://www.youtube.com/watch?v=SrNMPqQFncY">Video</a>
             <p>
               <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
@@ -262,147 +321,54 @@
         </tr>
 
 
-      
-      <tr onmouseout="rain_stop()" onmouseover="rain_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='rainy'>
-            <img src="images/SAPNet/rainy.png" width="160"></div>
-            <img src='images/SAPNet/derain.png' width="160">
-          </div>
-          <script type="text/javascript">
-            function rain_start() {
-              document.getElementById('rainy').style.opacity = "0";
-            }
+        <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='acml'>
+              <img src="images/AS_IntroVAE/AS_IntroVAE.JPG" width="160"></div>
+              <img src='images/AS_IntroVAE/AS_IntroVAE.JPG' width="160">
+            </div>
+            <script type="text/javascript">
+              function ACML_start() {
+                document.getElementById('acml').style.opacity = "1";
+              }
 
-            function rain_stop() {
-              document.getElementById('rainy').style.opacity = "1";
-            }
-            rain_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
-            <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
-          <!-- </a> -->
-          <br>
-          <strong>Shen Zheng</strong>, 
-          Changjie Lu, 
-          Yuxiong Wu, 
-          Gaurav Gupta
-          <br>
-          <em>WACV 2022</em>
-          <br>
-          <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf">Paper</a> /
-          <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> /
-          <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> /
-          <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a> /
-          <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a>
-          <p>
-            <strong>Motivation</strong>: Previous deraining methods remove both the rains and the background information, which is essential for high-level vision tasks like detection and segmentation. 
-          </p>
+              function ACML_stop() {
+                document.getElementById('acml').style.opacity = "0";
+              }
+              UDA_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
+              <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
+            <!-- </a> -->
+            <br>
+            Changjie Lu, 
+            <strong>Shen Zheng</strong>, 
+            Zirui Wang,
+            Omar Dib,
+            Gaurav Gupta
+            <br>
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">ACML 2022</strong> 
+            </em> 
+            <br>
+            <!-- <a href="">code</a> / -->
+            <a href="https://arxiv.org/pdf/2206.13903.pdf">Paper</a> |            
+            <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
+            <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">Slides</a>
             <p>
-              <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
-          </p>
-        </td>
-      </tr>
+              <strong>Motivation</strong>: Generative models experience posterior collapse and vanishing gradient due to no effective metric for real-fake image evaluation.
+            </p>
+            <p>
+              <strong>Solution</strong>: Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
+              collapse and the vanishing gradient problem in image generation in one go. 
+            </p>
+          </td>
+        </tr>
 
 
-
-
-
-
-        <!-- Maybe: Use images, not figures -->
-          <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='UDA_VAE++'>
-                <img src="images/UDA_VAE++/UDA_VAE++.png" width="160"></div>
-                <img src='images/UDA_VAE++/UDA_VAE++.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function UDA_start() {
-                  document.getElementById('mine').style.opacity = "1";
-                }
-
-                function UDA_stop() {
-                  document.getElementById('mine').style.opacity = "0";
-                }
-                UDA_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<!-- <a href="https://arxiv.org/pdf/2204.09334.pdf"> -->
-                <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
-                  Mutual Information Maximization</papertitle>
-              <!-- </a> -->
-              <br>
-              Changjie Lu, 
-              <strong>Shen Zheng</strong>, 
-              Gaurav Gupta
-              <br>
-              <em>CVPRW 2022</em>  
-              <br>
-              <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> /
-              <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> /
-              <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> /
-              <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
-
-              <p>
-                <strong>Motivation</strong>: Previous unsupervised domain adaptation methods in medical imaging fail at diverse imaging modalities (i.e., significant domain differences)
-              </p>
-              <p>
-                <strong>Solution</strong>: UDA-VAE++, an unsupervised domain adaptation framework that leverages mutual information maximization and sequential reparameterization for cardiac segmentation.
-              </p>
-            </td>
-          </tr>
-
-
-
-          <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='acml'>
-                <img src="images/AS_IntroVAE/AS_IntroVAE.JPG" width="160"></div>
-                <img src='images/AS_IntroVAE/AS_IntroVAE.JPG' width="160">
-              </div>
-              <script type="text/javascript">
-                function ACML_start() {
-                  document.getElementById('acml').style.opacity = "1";
-                }
-
-                function ACML_stop() {
-                  document.getElementById('acml').style.opacity = "0";
-                }
-                UDA_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
-                <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
-              <!-- </a> -->
-              <br>
-              Changjie Lu, 
-              <strong>Shen Zheng</strong>, 
-              Zirui Wang,
-              Omar Dib,
-              Gaurav Gupta
-              <br>
-              <em>ACML 2022</em>
-              <br>
-							<!-- <a href="">code</a> / -->
-              <a href="https://arxiv.org/pdf/2206.13903.pdf">Paper</a> /
-              <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">Slides</a> /
-              <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a>
-              <p>
-                Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
-                collapse and the vanishing gradient problem in image generation in one go. 
-              </p>
-            </td>
-          </tr>
-
-
- 
     
           <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -424,8 +390,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
 							<!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
-                <papertitle>Deblur-YOLO: Real-Time Object Detection
-                  with Efficient Blind Motion Deblurring</papertitle>
+                <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
               <!-- </a> -->
               <br>
               <strong>Shen Zheng</strong>, 
@@ -434,12 +399,17 @@
               Changjie Lu, 
               Gaurav Gupta
               <br>
-              <em>IJCNN 2021</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">IJCNN 2021 (Oral Presentation)</strong> 
+              </em> 
               <br>
-              <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> /
+              <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> |
               <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
               <p>
-              Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
+                <strong>Motivation</strong>: Object detection algorithms exhibit suboptimal performance on blurry scenes.
+              </p>
+              <p>
+                <strong>Solution</strong>: Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
               to deal with photographs corrupted by motion blur.
               </p>
             </td>
@@ -472,23 +442,144 @@
               Liwei Wang,
               Gaurav Gupta
               <br>
-              <em>CVIP 2020</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">CVIP 2020 (Oral Presentation)</strong> 
+              </em> 
               <br>
 							<!-- <a href="">code</a> / -->
-              <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> /
+              <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> |
               <a href="images/EES/EES_Slides.pdf">Slides</a>
               <p>
-              Introduce an efficient Convolutional Neural Network with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
+                <strong>Motivation</strong>: Existing ConvNets have poor computational complexity and require significant memory consumption.
+              </p>  
+              <p>
+                <strong>Solution</strong>: Introduce an efficient ConvNet with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
               </p>
             </td>
           </tr>
 
 
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Workshop Papers</heading>
+              <p>
+                <!-- Maybe: summarize main research points -->
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+      
+          <tr onmouseout="rain_stop()" onmouseover="rain_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rainy'>
+                <img src="images/SAPNet/rainy.png" width="160"></div>
+                <img src='images/SAPNet/derain.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function rain_start() {
+                  document.getElementById('rainy').style.opacity = "0";
+                }
+    
+                function rain_stop() {
+                  document.getElementById('rainy').style.opacity = "1";
+                }
+                rain_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
+                <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>, 
+              Changjie Lu, 
+              Yuxiong Wu, 
+              Gaurav Gupta
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">WACVW 2022</strong> 
+              </em>
+              <br>
+              <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf">Paper</a> |
+              <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> |
+              <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
+              <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a> |
+              <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a>
+              <p>
+                <strong>Motivation</strong>: Former deraining approaches often eliminate essential background details along with the rain, hindering tasks such as detection and segmentation. 
+              </p>
+                <p>
+                  <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
+              </p>
+            </td>
+          </tr>
+    
+    
+    
+    
+    
+    
+            <!-- Maybe: Use images, not figures -->
+              <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='UDA_VAE++'>
+                    <img src="images/UDA_VAE++/UDA_VAE++.png" width="160"></div>
+                    <img src='images/UDA_VAE++/UDA_VAE++.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function UDA_start() {
+                      document.getElementById('mine').style.opacity = "1";
+                    }
+    
+                    function UDA_stop() {
+                      document.getElementById('mine').style.opacity = "0";
+                    }
+                    UDA_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- <a href="https://arxiv.org/pdf/2204.09334.pdf"> -->
+                    <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
+                      Mutual Information Maximization</papertitle>
+                  <!-- </a> -->
+                  <br>
+                  Changjie Lu, 
+                  <strong>Shen Zheng</strong>, 
+                  Gaurav Gupta
+                  <br>
+                  <em style="display: block; margin: 10px 0 -5px;"> 
+                    <strong style="color: red;">CVPRW 2022</strong> 
+                  </em> 
+                  <br>
+                  <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> |
+                  <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> |
+                  <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> |
+                  <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
+    
+                  <p>
+                    <strong>Motivation</strong>: Previous unsupervised domain adaptation methods for medical imaging falter across varied imaging modalities due to substantial domain differences.
+                  </p>
+                  <p>
+                    <strong>Solution</strong>: UDA-VAE++, an unsupervised domain adaptation framework that leverages mutual information maximization and sequential reparameterization for cardiac segmentation.
+                  </p>
+                </td>
+              </tr>
+    
+
+
+
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <heading>Experiences</heading>
+                <heading>Internships</heading>
               </td>
             </tr>
           </tbody></table>
@@ -526,7 +617,7 @@
             </td>
           </tr>
 
-            
+<!--             
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/UND/UND.png" style="width: 185px;">
@@ -566,7 +657,7 @@
               </p>
 
             </td>
-          </tr>
+          </tr> -->
 
 
 
@@ -613,6 +704,30 @@
 
 
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/WKU/WKU.png" style="width: 185px;"></td>
+            <td width="75%" valign="center">
+              <strong>Co-Instructor</strong> at <a href="https://www.wku.edu.cn/en/">Wenzhou-Kean University</a>
+
+              <br>
+              <br>
+              <strong>Course</strong>: MATH 3291/3292 (Computer Vision)
+              <br>
+              <br>
+              
+              <a href="https://drive.google.com/drive/folders/1iYJHC2E_v-YYGZXK6BKJ543_o--p-RR4">Slide</a> | 
+              <a href="https://drive.google.com/drive/folders/1ZiHHAlPxVj727sq7MyK9Lmpcusp3bip3">Recordings</a>
+              
+              <!-- <br>
+              Collected state-of-the-art paper lists for paper reading, paper discussion, and literature review.  -->
+
+              <!-- <br>
+              I take the responsibility of 
+              <a href="https://github.com/WKUAILAB/AI_Tutorial/tree/main/CV">Computer Vision</a>. -->
+            </td>
+          </tr>
+
+
 
       
 
@@ -624,12 +739,10 @@
               <strong> Invited Speaker </strong> at <a href="https://www.fudan.edu.cn/en/">Fudan University</a>
               <br>
               <br>
-              <strong> Topic </strong>: <a href="images/Services/Slides_Fudan.pdf">Image Processing with Machine Learning</a>
+              <strong>Topic</strong>: <a href="images/Services/Slides_Fudan.pdf">Image Processing with Machine Learning</a>
               <br>
             </td>
           </tr>
-
-
 
 
   
@@ -644,15 +757,14 @@
               Offered AI Tutorials in Computer Vision and Natural Language Processing for undegraduate students. 
               <br>
               
-              <br>
-              Collected state-of-the-art paper lists for paper reading, paper discussion, and literature review. 
+              <!-- <br>
+              Collected state-of-the-art paper lists for paper reading, paper discussion, and literature review.  -->
 
               <!-- <br>
               I take the responsibility of 
               <a href="https://github.com/WKUAILAB/AI_Tutorial/tree/main/CV">Computer Vision</a>. -->
             </td>
           </tr>
-
 
                       
           <tr>
@@ -728,18 +840,24 @@
 
                 <strong>Sports</strong>: 
                 <br>
-                Basketball, Table Tennis, Swimming, Cycling, Climbing
+                Basketball, Table Tennis, Swimming, Cycling, Hiking, Weightlifting
                 <br>
                 <br>
-  
+
+                <strong>Games</strong>: 
+                <br>
+                DOTA2, AOE2, Warcraft III
+                <br>
+                <br>
+
                 <strong>Beliefs</strong>: 
                 <br>
+                <a href="https://yunuoch.github.io/">予诺三观</a> &
+                <a href="https://www.linkedin.com/in/haoran-qian/">浩然道路</a> &
                 <a href="https://www.researchgate.net/profile/Liwei-Wang-15">立威思想</a> &
                 <a href="https://www.linkedin.com/in/hang-xie/">谢航精神</a> &
                 <a href="http://relic.wang/">永富方法</a> &
-                <a href="https://www.linkedin.com/in/yuanzhe-liu-0a8a9a1b2/">刘远哲学</a> &
-                <a href="https://yunuoch.github.io/">予诺三观</a> &
-                <a href="https://www.linkedin.com/in/haoran-qian/">浩然道路</a>
+                <a href="https://www.linkedin.com/in/yuanzhe-liu-0a8a9a1b2/">刘远哲学</a> 
                 <br>
 
   
@@ -749,7 +867,7 @@
             </tr>
   
 
-
+<!-- 
           <tr>
             <td align="center" style="padding:20px;width:25%;vertical-align:middle">
 							<heading>Visitors</heading>
@@ -757,7 +875,9 @@
             <td width="75%" valign="middle">
               <a href="https://www.revolvermaps.com/livestats/5xcf5hcpcuz/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5xcf5hcpcuz.png" width="256" height="128" alt="Map" style="border:0;"></a>      </td>
             </td>
-          </tr>
+          </tr> -->
+
+
     </tr>
   </table>
 </body>
