@@ -26,8 +26,7 @@
 
               <p> I am an incoming PhD student at the Robotics Institute, Carnegie Mellon University <a href="https://www.cmu.edu/">(CMU)</a>. I am currently working full-time as a Perception Software Engineer at <a href="https://lucidmotors.com/">Lucid Motors</a>
                 . Recently, I completed my Master of Science in Computer Vision (<a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">MSCV</a>) degree
-                at CMU, collaborating with <a href="http://www.cs.cmu.edu/~srinivas/"> Dr. Srinivasa Narasimhan </a> 
-                at the Illumination and Imaging Lab <a href="https://www.cs.cmu.edu/~ILIM/"> (LLIM)</a>. 
+                at CMU, collaborating with <a href="http://www.cs.cmu.edu/~srinivas/"> Dr. Srinivasa Narasimhan</a>. 
                 Prior to joining CMU, I earned my bachelor's degree in Math from Wenzhou-Kean University  <a href="https://www.wku.edu.cn/">(WKU)</a>, where I worked
                 with <a href="https://wku.edu.cn/faculty/gaurav-gupta/"> Dr. Gaurav Gupta </a>.
 
@@ -90,8 +89,7 @@
               My research focus is better scene understanding across diverse environments using the following strategies:
             </p>
             <ul>
-              <li><strong>Test-Time Preprocessing</strong>: Blind Motion Deblurring, Single Image Deraining, Low-Light Image Enhancement</li>
-              <li><strong>Train-Time Preprocessing</strong>: Image Warping</li>
+              <li><strong>Preprocessing</strong>: Image Warping, Low-Light Image Enhancement, Single Image Deraining, Blind Motion Deblurring</li>
               <li><strong>Finetuning</strong>: Image Generation, Image-to-Image Translation</li>
               <!-- <li><strong>Domain Adaptation</strong>: Image Warping, Mutual Information Estimation</li> -->
             </ul>
@@ -120,12 +118,60 @@
 
 
 
+          <tr onmouseout="Road_Stop()" onmouseover="Road_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/RoadWork/roadwork.png" width="160"></div>
+                <img src="images/RoadWork/roadwork.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function Road_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Road_Stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Road_Stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
+                <papertitle>ROADWork Dataset: Learning to Recognize, Observe, Analyze and Drive Through Work Zones</papertitle>
+              <!-- </a> -->
+              <br>
+              Anurag Ghosh, Robert Tamburo, <strong>Shen Zheng</strong>, Juan R. Alvarez Padilla, Hailiang Zhu, Michael Cardei, Nicholas Dunn, Christoph Mertz, Srinivasa Narasimhan
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">In Submission </strong> 
+              </em>
+              <br>
+              <a href="https://arxiv.org/abs/2406.07661">Paper</a> |
+               <a href="http://www.cs.cmu.edu/~ILIM/roadwork_dataset/">Webpage</a>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Navigating through work zones is challenging due to a lack of large-scale open datasets.
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                Introduce the ROADWork dataset, which is so far the largest open-source work zone dataset, to help learn how to recognize, observe, analyze, and drive through work zones.
+              </p>
+  
+            </td>
+          </tr>
+
+
+
+
           <tr onmouseout="Inst_stop()" onmouseover="Inst_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
-                <img src="images/Inst_Warp/Draw-1.png" width="160"></div>
-                <img src="images/Inst_Warp/Draw-1.png" width="160">
+                <img src="images/Inst_Warp/da-badweather.png" width="160"></div>
+                <img src="images/Inst_Warp/da-badweather.png" width="160">
               </div>
               <script type="text/javascript">
                 function Inst_start() {
@@ -149,7 +195,7 @@
                     Srinivasa Narasimhan
               <br>
               <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">Under Anonymous Review </strong> 
+                <strong style="color: red;">In Submission </strong> 
               </em>
               <br>
               <a href="https://arxiv.org/abs/2403.12712">Paper</a> |
@@ -201,10 +247,10 @@
               </em>
               <br>
               <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zheng_TPSeNCE_Towards_Artifact-Free_Realistic_Rain_Generation_for_Deraining_and_Object_WACV_2024_paper.pdf">Paper</a> |
-              <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zheng_TPSeNCE_Towards_Artifact-Free_WACV_2024_supplemental.pdf">Supp</a> |
+              <a href="https://shenzheng2000.github.io/tpsence.github.io/">Webpage</a> |
               <a href="https://github.com/ShenZheng2000/TPSeNCE/">Code</a> |
+              <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zheng_TPSeNCE_Towards_Artifact-Free_WACV_2024_supplemental.pdf">Supp</a> |
               <a href="images/TPSeNCE/TPSeNCE_Slides.pdf">Slides</a> |
-              <a href="https://www.youtube.com/watch?v=eNS_8fuSLjc">Video</a> |
               <a href="images/TPSeNCE/TPSeNCE_Poster.pdf">Poster</a>
               <p>
                 <strong>Motivation</strong>: 
@@ -214,7 +260,7 @@
                 <strong>Solution</strong>: 
                 Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions during rain generation.  
                 Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to optimize the amounts of generated rain. 
-                Evaluate rain generation performances using rain removal and object detection. 
+                Show that realistic rain generation benefits deraining and object detection in rain. 
               </p>
   
             </td>
@@ -358,7 +404,7 @@
               <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
             </p>
             <p>
-              <strong>Solution</strong>: SGZ, a zero-shot low-light image enhancement framework with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation.
+              <strong>Solution</strong>: Introduce SGZ, a zero-shot low-light image enhancement framework with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation.
             </p>
           </td>
         </tr>
