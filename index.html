@@ -12,7 +12,6 @@
 
 <body>
 
-
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -40,27 +39,6 @@
               <p>
                 Email2: lebronshenzheng@gmail.com
               </p>
-
-              <!-- <p><strong>I am looking for a Ph.D. position starting Fall 2024!</strong></p> -->
-
-              <!-- <p>
-               During my undergrad, I have worked with 
-                on efficient network training, image restoration & enhancement & generation, and point cloud analysis.
-              </p> -->
-
-              <!-- <p>
-                I have also attended the <a href="https://ndi-sa.nd.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10096">iSURE</a> program 
-                provided by the <a href="https://www.nd.edu/">University of Notre Dame</a>,
-                where I worked with <a href="https://sites.nd.edu/chaoli-wang/">Dr. Chaoli Wang</a> on implicit representation for isosurface rendering. 
-              </p> -->
-
-                <!-- <p>
-                  Besides, I have worked in the perception team in <a href="https://www.momenta.cn/">Momenta</a>, where I was responsible for 
-                  data augmentation, data autolabeling, data cleaning, and object detection for traffic lights. 
-                </p> -->
-                
-
-                <!-- <p>If interested in research collaboration, feel free to drop me an email (shenzhen@andrew.cmu.edu).</p> -->
 
               <p style="text-align:center">
                 <!-- <a href="shenzhen@andrew.cmu.edu">Email</a> &nbsp/&nbsp -->
@@ -102,20 +80,67 @@
 
  
 
-
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Conference Papers</heading>
+              <heading>Selected Publications</heading>
               <p>
-                <!-- Maybe: summarize main research points -->
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+
+          <tr onmouseout="Inst_stop()" onmouseover="Inst_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/Inst_Warp/da-badweather.png" width="160"></div>
+                <img src="images/Inst_Warp/da-badweather.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function Inst_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Inst_stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Inst_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
+                <papertitle>Addressing Source Scale Bias via Image Warping for Domain Adaptation</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng★</strong>,
+                    Anurag Ghosh★,
+                    Srinivasa Narasimhan
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">In Submission </strong> 
+              </em>
+              <br>
+              <a href="https://arxiv.org/abs/2403.12712">Paper</a> |
+               <a href="https://instancewarp.github.io/">Webpage</a> |
+               <a href="https://github.com/ShenZheng2000/Instance-Warp">Code</a>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Object Scale bias challenges contemporal visual recognition systems.
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                Propose a instance-level image warping technique using dataset-specific size statistics to warp images in-place during training to address object scale bias.
+                Integrate image warping and feature unwarping into domain adaptation in a task-agnostic way without warping at test time. 
+              </p>
+  
+            </td>
+          </tr>
 
 
           <tr onmouseout="Road_Stop()" onmouseover="Road_start()">
@@ -165,54 +190,6 @@
 
 
 
-
-          <tr onmouseout="Inst_stop()" onmouseover="Inst_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='wacv'>
-                <img src="images/Inst_Warp/da-badweather.png" width="160"></div>
-                <img src="images/Inst_Warp/da-badweather.png" width="160">
-              </div>
-              <script type="text/javascript">
-                function Inst_start() {
-                  document.getElementById('wacv').style.opacity = "1";
-                }
-  
-                function Inst_stop() {
-                  document.getElementById('wacv').style.opacity = "0";
-                }
-                Inst_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
-                <papertitle>Addressing Source Scale Bias via Image Warping for Domain Adaptation</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Shen Zheng★</strong>,
-                    Anurag Ghosh★,
-                    Srinivasa Narasimhan
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">In Submission </strong> 
-              </em>
-              <br>
-              <a href="https://arxiv.org/abs/2403.12712">Paper</a> |
-               <a href="https://instancewarp.github.io/">Webpage</a>
-              <br>
-              <p>
-                <strong>Motivation</strong>: 
-                Object Scale bias challenges contemporal visual recognition systems.
-              </p>
-              <p>
-                <strong>Solution</strong>: 
-                Propose a instance-level image warping technique using dataset-specific size statistics to warp images in-place during training to address object scale bias.
-                Integrate image warping and feature unwarping into domain adaptation in a task-agnostic way without warping at test time. 
-              </p>
-  
-            </td>
-          </tr>
 
 
           <tr onmouseout="TPSeNCE_stop()" onmouseover="TPSeNCE_start()">
@@ -267,6 +244,67 @@
           </tr>
       
 
+        <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='night'>
+              <img src="images/SGZ/F1.png" width="160"></div>
+              <img src='images/SGZ/F1Crop.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function LLIE_start() {
+                document.getElementById('night').style.opacity = "0";
+              }
+
+              function LLIE_stop() {
+                document.getElementById('night').style.opacity = "1";
+              }
+              LLIE_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="images/SGZ/SGZ.pdf"> -->
+              <papertitle>Semantic-Guided Zero-Shot Learning for Low-Light Image/Video Enhancement</papertitle>
+            <!-- </a> -->
+            <br>
+            <strong>Shen Zheng</strong>, 
+            Gaurav Gupta
+            <br>
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">WACV 2022</strong> 
+            </em>
+            <br>
+            <a href="https://arxiv.org/pdf/2110.00970.pdf">Paper</a> |
+            <a href="https://shenzheng2000.github.io/sgz.github.io/">Webpage</a> |
+            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> | -->
+            <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> |
+            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> |
+            <p>
+              <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
+            </p>
+            <p>
+              <strong>Solution</strong>: Introduce SGZ, a zero-shot low-light image enhancement framework with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation.
+            </p>
+          </td>
+        </tr>
+
+
+
+
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Other Publications</heading>
+              <p>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
           <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -318,7 +356,6 @@
 
 
 
-
         <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -364,51 +401,6 @@
 
           </td>
         </tr>
-
-        <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='night'>
-              <img src="images/SGZ/F1.png" width="160"></div>
-              <img src='images/SGZ/F1Crop.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function LLIE_start() {
-                document.getElementById('night').style.opacity = "0";
-              }
-
-              function LLIE_stop() {
-                document.getElementById('night').style.opacity = "1";
-              }
-              LLIE_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <!-- <a href="images/SGZ/SGZ.pdf"> -->
-              <papertitle>Semantic-Guided Zero-Shot Learning for Low-Light Image/Video Enhancement</papertitle>
-            <!-- </a> -->
-            <br>
-            <strong>Shen Zheng</strong>, 
-            Gaurav Gupta
-            <br>
-            <em style="display: block; margin: 10px 0 -5px;"> 
-              <strong style="color: red;">WACV 2022</strong> 
-            </em>
-            <br>
-            <a href="https://arxiv.org/pdf/2110.00970.pdf">Paper</a> |
-            <a href="https://shenzheng2000.github.io/sgz.github.io/">Webpage</a> |
-            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> | -->
-            <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> |
-            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> |
-            <p>
-              <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
-            </p>
-            <p>
-              <strong>Solution</strong>: Introduce SGZ, a zero-shot low-light image enhancement framework with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation.
-            </p>
-          </td>
-        </tr>
-
 
         <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -458,111 +450,7 @@
         </tr>
 
 
-    
-          <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blur'>
-                <img src="images/Deblur_YOLO/baby_blur.png" width="160"></div>
-                <img src='images/Deblur_YOLO/baby_deblurYolo.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function ijcnn_start() {
-                  document.getElementById('blur').style.opacity = "0";
-                }
 
-                function ijcnn_stop() {
-                  document.getElementById('blur').style.opacity = "1";
-                }
-                ijcnn_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
-                <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Shen Zheng</strong>, 
-              Yuxiong Wu,
-              Shiyu Jiang,
-              Changjie Lu, 
-              Gaurav Gupta
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">IJCNN 2021 (Oral Presentation)</strong> 
-              </em> 
-              <br>
-              <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> |
-              <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
-              <p>
-                <strong>Motivation</strong>: Object detection algorithms exhibit suboptimal performance on blurry scenes.
-              </p>
-              <p>
-                <strong>Solution</strong>: Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
-              to deal with photographs corrupted by motion blur.
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="EES_stop()" onmouseover="EES_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='EES'>
-                <img src="images/EES/EES.png" width="160"></div>
-                <img src='images/EES/EES.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function EES_start() {
-                  document.getElementById('EES').style.opacity = "1";
-                }
-
-                function EES_stop() {
-                  document.getElementById('EES').style.opacity = "0";
-                }
-                UDA_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
-                <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Shen Zheng</strong>, 
-              Liwei Wang,
-              Gaurav Gupta
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">CVIP 2020 (Oral Presentation)</strong> 
-              </em> 
-              <br>
-							<!-- <a href="">code</a> / -->
-              <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> |
-              <a href="images/EES/EES_Slides.pdf">Slides</a>
-              <p>
-                <strong>Motivation</strong>: Existing ConvNets have poor computational complexity and require significant memory consumption.
-              </p>  
-              <p>
-                <strong>Solution</strong>: Introduce an efficient ConvNet with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
-              </p>
-            </td>
-          </tr>
-
-
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Workshop Papers</heading>
-              <p>
-                <!-- Maybe: summarize main research points -->
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-      
           <tr onmouseout="rain_stop()" onmouseover="rain_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -608,10 +496,6 @@
               </p>
             </td>
           </tr>
-    
-    
-    
-    
     
     
             <!-- Maybe: Use images, not figures -->
@@ -661,8 +545,95 @@
                 </td>
               </tr>
     
-
-
+    
+              <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='blur'>
+                    <img src="images/Deblur_YOLO/baby_blur.png" width="160"></div>
+                    <img src='images/Deblur_YOLO/baby_deblurYolo.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function ijcnn_start() {
+                      document.getElementById('blur').style.opacity = "0";
+                    }
+    
+                    function ijcnn_stop() {
+                      document.getElementById('blur').style.opacity = "1";
+                    }
+                    ijcnn_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
+                    <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Shen Zheng</strong>, 
+                  Yuxiong Wu,
+                  Shiyu Jiang,
+                  Changjie Lu, 
+                  Gaurav Gupta
+                  <br>
+                  <em style="display: block; margin: 10px 0 -5px;"> 
+                    <strong style="color: red;">IJCNN 2021 (Oral Presentation)</strong> 
+                  </em> 
+                  <br>
+                  <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> |
+                  <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
+                  <p>
+                    <strong>Motivation</strong>: Object detection algorithms exhibit suboptimal performance on blurry scenes.
+                  </p>
+                  <p>
+                    <strong>Solution</strong>: Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
+                  to deal with photographs corrupted by motion blur.
+                  </p>
+                </td>
+              </tr>
+    
+              <tr onmouseout="EES_stop()" onmouseover="EES_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='EES'>
+                    <img src="images/EES/EES.png" width="160"></div>
+                    <img src='images/EES/EES.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function EES_start() {
+                      document.getElementById('EES').style.opacity = "1";
+                    }
+    
+                    function EES_stop() {
+                      document.getElementById('EES').style.opacity = "0";
+                    }
+                    UDA_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
+                    <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Shen Zheng</strong>, 
+                  Liwei Wang,
+                  Gaurav Gupta
+                  <br>
+                  <em style="display: block; margin: 10px 0 -5px;"> 
+                    <strong style="color: red;">CVIP 2020 (Oral Presentation)</strong> 
+                  </em> 
+                  <br>
+                  <!-- <a href="">code</a> / -->
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> |
+                  <a href="images/EES/EES_Slides.pdf">Slides</a>
+                  <p>
+                    <strong>Motivation</strong>: Existing ConvNets have poor computational complexity and require significant memory consumption.
+                  </p>  
+                  <p>
+                    <strong>Solution</strong>: Introduce an efficient ConvNet with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
+                  </p>
+                </td>
+              </tr>
+    
 
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
@@ -816,8 +787,8 @@
               <a href="https://2023.ijcnn.org/">IJCNN 2023</a>, 
               <a href="https://wacv2023.thecvf.com/home">WACV 2023</a>,
               <a href="https://wacv2024.thecvf.com/home">WACV 2024</a>,
-              <a href="https://eccv2024.ecva.net/">ECCV 2024</a>
-              <a href="https://2023.ijcnn.org/">IJCNN 2024</a>, 
+              <a href="https://eccv2024.ecva.net/">ECCV 2024</a>,
+              <a href="https://2023.ijcnn.org/">IJCNN 2024</a>
               <br>
               <br>
 
@@ -826,14 +797,8 @@
               <a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems">TNNLS</a>,
               <a href="https://www.springer.com/journal/11263">IJCV</a>,
               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76">TCSVT</a>
-              
-              <br>
-              <br>
 
-              <strong>Session Chair</strong>:
-              <br>
-              <a href="https://dblp.org/db/conf/ijcnn/ijcnn2021.html">IJCNN 2021</a>
-              <br>
+
             </td>
           </tr>
 
