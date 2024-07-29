@@ -244,6 +244,55 @@
           </tr>
       
 
+          <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/PointNorm/PointNorm.png" width="160"></div>
+                <img src='images/PointNorm/PointNorm.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function Point_cloud_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Point_cloud_stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Point_cloud_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Shen Zheng</strong>,
+              Jinqian Pan,
+              Changjie Lu,
+              Gaurav Gupta
+              <br>
+              <!-- <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">IJCNN 2023 (Oral Presentation)</strong> 
+              </em>
+              <br>
+              <a href="https://arxiv.org/abs/2207.06324">Paper</a> |
+              <a href="https://shenzheng2000.github.io/pointnorm.github.io/">Webpage</a> |
+              <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> |
+              <a href="images/PointNorm/IJCNN_2023_Pre.pdf">Slides</a> 
+              <p>
+                <strong>Motivation</strong>: Current point cloud analysis methods struggles with irregular (i.e., unevenly distributed) point clouds. 
+              </p>
+              <p>
+                <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
+              </p>
+  
+            </td>
+          </tr>
+  
+
+
         <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -287,6 +336,9 @@
             </p>
           </td>
         </tr>
+
+
+        
 
 
 
@@ -356,52 +408,6 @@
 
 
 
-        <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='wacv'>
-              <img src="images/PointNorm/PointNorm.png" width="160"></div>
-              <img src='images/PointNorm/PointNorm.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function Point_cloud_start() {
-                document.getElementById('wacv').style.opacity = "1";
-              }
-
-              function Point_cloud_stop() {
-                document.getElementById('wacv').style.opacity = "0";
-              }
-              Point_cloud_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-              <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
-            <!-- </a> -->
-            <br>
-            <strong>Shen Zheng</strong>,
-            Jinqian Pan,
-            Changjie Lu,
-            Gaurav Gupta
-            <br>
-            <!-- <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
-            <em style="display: block; margin: 10px 0 -5px;"> 
-              <strong style="color: red;">IJCNN 2023 (Oral Presentation)</strong> 
-            </em>
-            <br>
-            <a href="https://arxiv.org/abs/2207.06324">Paper</a> |
-            <a href="https://shenzheng2000.github.io/pointnorm.github.io/">Webpage</a> |
-            <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> |
-            <a href="images/PointNorm/IJCNN_2023_Pre.pdf">Slides</a> 
-            <p>
-              <strong>Motivation</strong>: Current point cloud analysis methods struggles with irregular (i.e., unevenly distributed) point clouds. 
-            </p>
-            <p>
-              <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
-            </p>
-
-          </td>
-        </tr>
 
         <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
