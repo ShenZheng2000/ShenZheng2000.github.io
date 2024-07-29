@@ -64,11 +64,11 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Research Areas</heading>
             <p>
-              My research focus is better scene understanding across diverse environments using the following strategies:
+              My research focus is robust scene understanding across diverse environments using the following strategies:
             </p>
             <ul>
-              <li><strong>Preprocessing</strong>: Image Warping, Low-Light Image Enhancement, Single Image Deraining, Blind Motion Deblurring</li>
-              <li><strong>Finetuning</strong>: Image Generation, Image-to-Image Translation</li>
+              <li><strong>Preprocessing</strong>: Image Warping, Low-Light Image Enhancement, Single Image Deraining, Blind Motion Deblurring, Normalization</li>
+              <li><strong>Finetuning</strong>: Image Generation, Image-to-Image Translation, Image Collection</li>
               <!-- <li><strong>Domain Adaptation</strong>: Image Warping, Mutual Information Estimation</li> -->
             </ul>
 
@@ -114,7 +114,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
                 <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
-                <papertitle>Addressing Source Scale Bias via Image Warping for Domain Adaptation</papertitle>
+                <papertitle>Saliency Guided Image Warping for Unsupervised Domain Adaptation</papertitle>
               <!-- </a> -->
               <br>
               <strong>Shen Zheng★</strong>,
@@ -131,14 +131,12 @@
               <br>
               <p>
                 <strong>Motivation</strong>: 
-                Object Scale bias challenges contemporal visual recognition systems.
+                Domain adaptation methods struggle to learn smaller objects amidst dominant backgrounds with high cross-domain variations.
               </p>
               <p>
                 <strong>Solution</strong>: 
-                Propose a instance-level image warping technique using dataset-specific size statistics to warp images in-place during training to address object scale bias.
-                Integrate image warping and feature unwarping into domain adaptation in a task-agnostic way without warping at test time. 
+                Oversample salient object regions by warping source-domain images in-place using instance-level saliency guidance during training while performing domain adaptation.
               </p>
-  
             </td>
           </tr>
 
@@ -942,7 +940,7 @@
   
                 <strong>Languages</strong>: 
                 <br>
-                Chinese, English, Spanish, Russian, Arabic
+                Chinese, English
                 <br>
                 <br>
 
