@@ -10,6 +10,10 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <body>
 
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -23,8 +27,9 @@
               </p>
 
 
-              <p> I am an incoming PhD student at the Robotics Institute, Carnegie Mellon University <a href="https://www.cmu.edu/">(CMU)</a>. I am currently working full-time as a Perception Software Engineer at <a href="https://lucidmotors.com/">Lucid Motors</a>
-                . Recently, I completed my Master of Science in Computer Vision (<a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">MSCV</a>) degree
+              <p> I am an incoming PhD student at the Robotics Institute, Carnegie Mellon University <a href="https://www.cmu.edu/">(CMU)</a>. 
+                I recently finished working full-time as a Perception Software Engineer at <a href="https://lucidmotors.com/">Lucid Motors</a>
+                . I completed my Master of Science in Computer Vision (<a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">MSCV</a>) degree
                 at CMU, collaborating with <a href="http://www.cs.cmu.edu/~srinivas/"> Dr. Srinivasa Narasimhan</a>. 
                 Prior to joining CMU, I earned my bachelor's degree in Math from Wenzhou-Kean University  <a href="https://www.wku.edu.cn/">(WKU)</a>, where I worked
                 with <a href="https://wku.edu.cn/faculty/gaurav-gupta/"> Dr. Gaurav Gupta </a>.
@@ -59,24 +64,45 @@
 
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Research Areas</heading>
-            <p>
-              My research focus is robust scene understanding across diverse environments using the following strategies:
-            </p>
-            <ul>
-              <li><strong>Preprocessing</strong>: Image Warping, Low-Light Image Enhancement, Single Image Deraining, Blind Motion Deblurring, Normalization</li>
-              <li><strong>Finetuning</strong>: Image Generation, Image-to-Image Translation, Image Collection</li>
-              <!-- <li><strong>Domain Adaptation</strong>: Image Warping, Mutual Information Estimation</li> -->
-            </ul>
-
-          
-          </td>
-        </tr>
-      </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td id="research-areas" style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Research Areas</heading>
+                <p>
+                  My research focuses on robust scene understanding across diverse environments (e.g., weather and lighting) using the following strategies:
+                </p>
+                <ul>
+                  <li><strong>Preprocessing (Train-Time):</strong>
+                    <ul>
+                      <li>Image Warping: <a href="#instancewarp">Instance-Warp</a></li>
+                      <li>Point Normalization: <a href="#pointnorm">PointNorm</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Preprocessing (Test-Time):</strong>
+                    <ul>
+                      <li>Low-Light Image Enhancement: <a href="#sgz">SGZ</a>, <a href="#lliesurvey">LLIE_Survey</a></li>
+                      <li>Single Image Deraining: <a href="#sapnet">SAPNet</a></li>
+                      <li>Blind Motion Deblurring: <a href="#debluryolo">Deblur-YOLO</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Finetuning:</strong>
+                    <ul>
+                      <li>Image Generation: <a href="#asintrovae">AS-IntroVAE</a></li>
+                      <li>Image-to-Image Translation: <a href="#tpsence">TPSeNCE</a></li>
+                      <li>Image Collection: <a href="#roadwork">ROADWork</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <!-- Additional content can go here if needed -->
+          </tbody>
+        </table>
 
  
 
@@ -93,7 +119,7 @@
 
 
 
-          <tr onmouseout="Inst_stop()" onmouseover="Inst_start()">
+          <tr onmouseout="Inst_stop()" onmouseover="Inst_start()" id="instancewarp">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -116,6 +142,9 @@
                 <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
                 <papertitle>Saliency Guided Image Warping for Unsupervised Domain Adaptation</papertitle>
               <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
               <br>
               <strong>Shen Zheng★</strong>,
                     Anurag Ghosh★,
@@ -141,7 +170,7 @@
           </tr>
 
 
-          <tr onmouseout="Road_Stop()" onmouseover="Road_start()">
+          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -164,6 +193,9 @@
                 <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
                 <papertitle>ROADWork Dataset: Learning to Recognize, Observe, Analyze and Drive Through Work Zones</papertitle>
               <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
               <br>
               Anurag Ghosh, Robert Tamburo, <strong>Shen Zheng</strong>, Juan R. Alvarez Padilla, Hailiang Zhu, Michael Cardei, Nicholas Dunn, Christoph Mertz, Srinivasa Narasimhan
               <br>
@@ -190,7 +222,7 @@
 
 
 
-          <tr onmouseout="TPSeNCE_stop()" onmouseover="TPSeNCE_start()">
+          <tr onmouseout="TPSeNCE_stop()" onmouseover="TPSeNCE_start()" id="tpsence">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -212,6 +244,9 @@
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
                 <papertitle>TPSeNCE: Towards Artifact-Free Realistic Rain Generation for Deraining and Object Detection in Rain</papertitle>
               <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
               <br>
               <strong>Shen Zheng</strong>,
                     Changjie Lu,
@@ -224,7 +259,7 @@
               <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zheng_TPSeNCE_Towards_Artifact-Free_Realistic_Rain_Generation_for_Deraining_and_Object_WACV_2024_paper.pdf">Paper</a> |
               <a href="https://shenzheng2000.github.io/tpsence.github.io/">Webpage</a> |
               <a href="https://github.com/ShenZheng2000/TPSeNCE/">Code</a> |
-              <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zheng_TPSeNCE_Towards_Artifact-Free_WACV_2024_supplemental.pdf">Supp</a> |
+              <!-- <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zheng_TPSeNCE_Towards_Artifact-Free_WACV_2024_supplemental.pdf">Supp</a> | -->
               <a href="images/TPSeNCE/TPSeNCE_Slides.pdf">Slides</a> |
               <a href="images/TPSeNCE/TPSeNCE_Poster.pdf">Poster</a>
               <p>
@@ -242,7 +277,7 @@
           </tr>
       
 
-          <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()">
+          <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start() " id="pointnorm">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -264,6 +299,9 @@
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
                 <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
               <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
               <br>
               <strong>Shen Zheng</strong>,
               Jinqian Pan,
@@ -291,7 +329,7 @@
   
 
 
-        <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()">
+        <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()" id="sgz">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='night'>
@@ -313,6 +351,9 @@
             <!-- <a href="images/SGZ/SGZ.pdf"> -->
               <papertitle>Semantic-Guided Zero-Shot Learning for Low-Light Image/Video Enhancement</papertitle>
             <!-- </a> -->
+            <a href="#research-areas">
+              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+            </a>
             <br>
             <strong>Shen Zheng</strong>, 
             Gaurav Gupta
@@ -325,7 +366,7 @@
             <a href="https://shenzheng2000.github.io/sgz.github.io/">Webpage</a> |
             <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/RWS/supplemental/Zheng_Semantic-Guided_Zero-Shot_Learning_WACVW_2022_supplemental.pdf">Supp</a> | -->
             <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">Code</a> |
-            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a> |
+            <a href="images/SGZ/SGZ_Slides.pdf">Slides</a>
             <p>
               <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
             </p>
@@ -336,9 +377,9 @@
         </tr>
 
 
-        
 
-
+ 
+    
 
 
 
@@ -355,7 +396,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-          <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()">
+          <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()"  id="lliesurvey">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -377,6 +418,9 @@
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
                 <papertitle>Low-Light Image Enhancement: A Comprehensive Survey and Beyond</papertitle>
               <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
               <br>
               <strong>Shen Zheng</strong>,
               Yiling Ma,
@@ -407,7 +451,7 @@
 
 
 
-        <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
+        <tr onmouseout="ACML_stop()" onmouseover="ACML_start()"  id="asintrovae">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='acml'>
@@ -429,6 +473,9 @@
             <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
               <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
             <!-- </a> -->
+            <a href="#research-areas">
+              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+            </a>
             <br>
             Changjie Lu, 
             <strong>Shen Zheng</strong>, 
@@ -456,53 +503,58 @@
 
 
 
-          <tr onmouseout="rain_stop()" onmouseover="rain_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rainy'>
-                <img src="images/SAPNet/rainy.png" width="160"></div>
-                <img src='images/SAPNet/derain.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function rain_start() {
-                  document.getElementById('rainy').style.opacity = "0";
-                }
-    
-                function rain_stop() {
-                  document.getElementById('rainy').style.opacity = "1";
-                }
-                rain_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
-                <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Shen Zheng</strong>, 
-              Changjie Lu, 
-              Yuxiong Wu, 
-              Gaurav Gupta
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">WACVW 2022</strong> 
-              </em>
-              <br>
-              <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf">Paper</a> |
-              <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> |
-              <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
-              <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a> |
-              <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a>
+        <tr onmouseout="rain_stop()" onmouseover="rain_start()" id="sapnet">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='rainy'>
+              <img src="images/SAPNet/rainy.png" width="160"></div>
+              <img src='images/SAPNet/derain.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function rain_start() {
+                document.getElementById('rainy').style.opacity = "0";
+              }
+  
+              function rain_stop() {
+                document.getElementById('rainy').style.opacity = "1";
+              }
+              rain_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
+              <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
+            <!-- </a> -->
+            <a href="#research-areas">
+              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+            </a>
+            <br>
+            <strong>Shen Zheng</strong>, 
+            Changjie Lu, 
+            Yuxiong Wu, 
+            Gaurav Gupta
+            <br>
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">WACVW 2022</strong> 
+            </em>
+            <br>
+            <a href="https://arxiv.org/abs/2111.08892">Paper</a> |
+            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> | -->
+            <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
+            <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a>
+            <!-- <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a> -->
+            <p>
+              <strong>Motivation</strong>: Former deraining approaches often eliminate essential background details along with the rain, hindering tasks such as detection and segmentation. 
+            </p>
               <p>
-                <strong>Motivation</strong>: Former deraining approaches often eliminate essential background details along with the rain, hindering tasks such as detection and segmentation. 
-              </p>
-                <p>
-                  <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
-              </p>
-            </td>
-          </tr>
-    
-    
+                <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
+            </p>
+          </td>
+        </tr>
+  
+  
+
+ 
             <!-- Maybe: Use images, not figures -->
               <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -527,6 +579,9 @@
                     <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
                       Mutual Information Maximization</papertitle>
                   <!-- </a> -->
+                  <a href="#research-areas">
+                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+                  </a>
                   <br>
                   Changjie Lu, 
                   <strong>Shen Zheng</strong>, 
@@ -537,7 +592,7 @@
                   </em> 
                   <br>
                   <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> |
-                  <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> |
+                  <!-- <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> | -->
                   <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> |
                   <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
     
@@ -551,7 +606,7 @@
               </tr>
     
     
-              <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()">
+              <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()" id="debluryolo">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='blur'>
@@ -573,6 +628,9 @@
                   <!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
                     <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
                   <!-- </a> -->
+                  <a href="#research-areas">
+                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+                  </a>
                   <br>
                   <strong>Shen Zheng</strong>, 
                   Yuxiong Wu,
@@ -618,6 +676,9 @@
                   <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
                     <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
                   <!-- </a> -->
+                  <a href="#research-areas">
+                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+                  </a>
                   <br>
                   <strong>Shen Zheng</strong>, 
                   Liwei Wang,
