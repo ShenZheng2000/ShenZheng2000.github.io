@@ -83,11 +83,10 @@
                     </ul>
                   </li>
 
-                  <li><strong>Image Generation and Curation</strong>
+                  <li><strong>Image Synthesis</strong>
                     <ul>
                       <li>Image-to-Image Translation: <a href="#tpsence">TPSeNCE</a></li>
                       <li>Image Generation: <a href="#asintrovae">AS-IntroVAE</a></li>
-                      <li>Image Collection: <a href="#roadwork">ROADWork</a></li>
                     </ul>
                   </li>
 
@@ -98,6 +97,7 @@
                       <li>Point Normalization: <a href="#pointnorm">PointNorm</a></li>
                     </ul>
                   </li>
+
 
                 </ul>
               </td>
@@ -383,6 +383,59 @@
         </tr>
 
 
+        
+        <tr onmouseout="ACML_stop()" onmouseover="ACML_start()"  id="asintrovae">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='acml'>
+              <img src="images/AS_IntroVAE/AS_IntroVAE.JPG" width="160"></div>
+              <img src='images/AS_IntroVAE/AS_IntroVAE.JPG' width="160">
+            </div>
+            <script type="text/javascript">
+              function ACML_start() {
+                document.getElementById('acml').style.opacity = "1";
+              }
+
+              function ACML_stop() {
+                document.getElementById('acml').style.opacity = "0";
+              }
+              UDA_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
+              <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
+            <!-- </a> -->
+            <a href="#research-areas">
+              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+            </a>
+            <br>
+            Changjie Lu, 
+            <strong>Shen Zheng</strong>, 
+            Zirui Wang,
+            Omar Dib,
+            Gaurav Gupta
+            <br>
+            <em style="display: block; margin: 10px 0 -5px;"> 
+              <strong style="color: red;">ACML 2022</strong> 
+            </em> 
+            <br>
+            <!-- <a href="">code</a> / -->
+            <a href="https://arxiv.org/pdf/2206.13903.pdf">Paper</a> |            
+            <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
+            <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">Slides</a>
+            <p>
+              <strong>Motivation</strong>: Generative models experience posterior collapse and vanishing gradient due to no effective metric for real-fake image evaluation.
+            </p>
+            <p>
+              <strong>Solution</strong>: Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
+              collapse and the vanishing gradient problem in image generation in one go. 
+            </p>
+          </td>
+        </tr>
+
+
+
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
@@ -533,57 +586,6 @@
           </tr>
 
 
-
-
-        <tr onmouseout="ACML_stop()" onmouseover="ACML_start()"  id="asintrovae">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='acml'>
-              <img src="images/AS_IntroVAE/AS_IntroVAE.JPG" width="160"></div>
-              <img src='images/AS_IntroVAE/AS_IntroVAE.JPG' width="160">
-            </div>
-            <script type="text/javascript">
-              function ACML_start() {
-                document.getElementById('acml').style.opacity = "1";
-              }
-
-              function ACML_stop() {
-                document.getElementById('acml').style.opacity = "0";
-              }
-              UDA_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
-              <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
-            <!-- </a> -->
-            <a href="#research-areas">
-              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-            </a>
-            <br>
-            Changjie Lu, 
-            <strong>Shen Zheng</strong>, 
-            Zirui Wang,
-            Omar Dib,
-            Gaurav Gupta
-            <br>
-            <em style="display: block; margin: 10px 0 -5px;"> 
-              <strong style="color: red;">ACML 2022</strong> 
-            </em> 
-            <br>
-            <!-- <a href="">code</a> / -->
-            <a href="https://arxiv.org/pdf/2206.13903.pdf">Paper</a> |            
-            <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
-            <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">Slides</a>
-            <p>
-              <strong>Motivation</strong>: Generative models experience posterior collapse and vanishing gradient due to no effective metric for real-fake image evaluation.
-            </p>
-            <p>
-              <strong>Solution</strong>: Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
-              collapse and the vanishing gradient problem in image generation in one go. 
-            </p>
-          </td>
-        </tr>
 
 
 
