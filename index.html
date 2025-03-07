@@ -75,7 +75,7 @@
                 <ul>
 
 
-                  <li><strong>Image Restoration and Enhancement</strong>
+                  <li><strong>(TEST-Time) Image Restoration and Enhancement</strong>
                     <ul>
                       <li>Low-Light Image Enhancement: <a href="#sgz">SGZ</a>, <a href="#lliesurvey">LLIE_Survey</a></li>
                       <li>Single Image Deraining: <a href="#sapnet">SAPNet</a></li>
@@ -83,7 +83,7 @@
                     </ul>
                   </li>
 
-                  <li><strong>Image Synthesis</strong>
+                  <li><strong>(TRAIN-Time) Image Synthesis</strong>
                     <ul>
                       <li>Image-to-Image Translation: <a href="#tpsence">TPSeNCE</a></li>
                       <li>Image Generation: <a href="#asintrovae">AS-IntroVAE</a></li>
@@ -91,7 +91,7 @@
                   </li>
 
                   
-                  <li><strong>Geometric Transformations</strong>
+                  <li><strong>(ANY-Time) Geometric Transformations</strong>
                     <ul>
                       <li>Image Warping: <a href="#instancewarp">Instance-Warp</a></li>
                       <li>Point Normalization: <a href="#pointnorm">PointNorm</a></li>
@@ -122,6 +122,60 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+
+          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/RoadWork/roadwork.png" width="160"></div>
+                <img src="images/RoadWork/roadwork.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function Road_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Road_Stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Road_Stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
+                <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
+                <papertitle>ROADWork Dataset: Learning to Recognize, Observe, Analyze and Drive Through Work Zones</papertitle>
+              <!-- </a> -->
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
+              </a>
+              <br>
+              Anurag Ghosh, <strong>Shen Zheng</strong>, Robert Tamburo, Juan R. Alvarez Padilla, Hailiang Zhu, Michael Cardei, Nicholas Dunn, Christoph Mertz, Srinivasa Narasimhan
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">Under Review </strong> 
+              </em>
+              <br>
+              <a href="https://arxiv.org/abs/2406.07661">Paper</a> |
+               <a href="http://www.cs.cmu.edu/~ILIM/roadwork_dataset/">Webpage</a>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Navigating through work zones is challenging due to a lack of large-scale open datasets.
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                Introduce the ROADWork dataset, which is so far the largest open-source work zone dataset, to help learn how to recognize, observe, analyze, and drive through work zones.
+              </p>
+  
+            </td>
+          </tr>
+
+
+
 
 
 
@@ -174,56 +228,6 @@
               </p>
             </td>
           </tr>
-
-
-          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='wacv'>
-                <img src="images/RoadWork/roadwork.png" width="160"></div>
-                <img src="images/RoadWork/roadwork.png" width="160">
-              </div>
-              <script type="text/javascript">
-                function Road_start() {
-                  document.getElementById('wacv').style.opacity = "1";
-                }
-  
-                function Road_Stop() {
-                  document.getElementById('wacv').style.opacity = "0";
-                }
-                Road_Stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <!-- <papertitle>Addressing Source Scale Bias via Instance-Level Image Warping for Domain Adaptation</papertitle> -->
-                <papertitle>ROADWork Dataset: Learning to Recognize, Observe, Analyze and Drive Through Work Zones</papertitle>
-              <!-- </a> -->
-              <a href="#research-areas">
-                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-              </a>
-              <br>
-              Anurag Ghosh, Robert Tamburo, <strong>Shen Zheng</strong>, Juan R. Alvarez Padilla, Hailiang Zhu, Michael Cardei, Nicholas Dunn, Christoph Mertz, Srinivasa Narasimhan
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">Under Review </strong> 
-              </em>
-              <br>
-              <a href="https://arxiv.org/abs/2406.07661">Paper</a> |
-               <a href="http://www.cs.cmu.edu/~ILIM/roadwork_dataset/">Webpage</a>
-              <br>
-              <p>
-                <strong>Motivation</strong>: 
-                Navigating through work zones is challenging due to a lack of large-scale open datasets.
-              </p>
-              <p>
-                <strong>Solution</strong>: 
-                Introduce the ROADWork dataset, which is so far the largest open-source work zone dataset, to help learn how to recognize, observe, analyze, and drive through work zones.
-              </p>
-  
-            </td>
-          </tr>
-
 
 
 
