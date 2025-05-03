@@ -45,6 +45,8 @@
                 Email2: lebronshenzheng@gmail.com
               </p>
 
+              
+
               <p style="text-align:center">
                 <!-- <a href="shenzhen@andrew.cmu.edu">Email</a> &nbsp/&nbsp -->
                 <a href="images/Self/CV_ShenZheng.pdf">CV</a> &nbsp/&nbsp
@@ -87,15 +89,13 @@
                   </li>
                   
                   <p>
-                    My earlier works focus on image restoration and enhancement, such as:
+                    My earlier works focus on image restoration and enhancement (e.g., <a href="#sgz">SGZ</a>, <a href="#lliesurvey">LLIE_Survey</a>)
                   </p>
-                  <ul>
-                    <li><i>Low-Light Image Enhancement:</i> <a href="#sgz">SGZ</a>, <a href="#lliesurvey">LLIE_Survey</a></li>
+                  <!-- <ul>
+                    <li><i>Low-Light Image Enhancement:</i> </li>
                     <li><i>Single Image Deraining:</i> <a href="#sapnet">SAPNet</a></li>
                     <li><i>Blind Motion Deblurring:</i> <a href="#debluryolo">Deblur-YOLO</a></li>
-
-
-                </ul>
+                </ul> -->
               </td>
             </tr>
           </tbody>
@@ -283,56 +283,110 @@
           </tr>
       
 
-          <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start() " id="pointnorm">
+
+
+          <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()"  id="lliesurvey">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
-                <img src="images/PointNorm/PointNorm.png" width="160"></div>
-                <img src='images/PointNorm/PointNorm.png' width="160">
+                <img src="images/LLIE_Survey/Timeline.png" width="160"></div>
+                <img src='images/LLIE_Survey/Timeline.png' width="160">
               </div>
               <script type="text/javascript">
-                function Point_cloud_start() {
+                function LLIE_Survey_start() {
                   document.getElementById('wacv').style.opacity = "1";
                 }
   
-                function Point_cloud_stop() {
+                function LLIE_Survey_stop() {
                   document.getElementById('wacv').style.opacity = "0";
                 }
-                Point_cloud_stop()
+                LLIE_Survey_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
+                <papertitle>Low-Light Image Enhancement: A Comprehensive Survey and Beyond</papertitle>
               <!-- </a> -->
               <a href="#research-areas">
                 <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
               </a>
               <br>
               <strong>Shen Zheng</strong>,
+              Yiling Ma,
               Jinqian Pan,
               Changjie Lu,
               Gaurav Gupta
               <br>
-              <!-- <em>IJCNN 2023</em> &nbsp <font color="red"><strong>(Oral Presentation)</strong></font> -->
               <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;">IJCNN 2023 (Oral Presentation)</strong> 
+                <strong style="color: red;"></strong> 
               </em>
               <br>
-              <a href="https://arxiv.org/abs/2207.06324">Paper</a> |
-              <a href="https://shenzheng2000.github.io/pointnorm.github.io/">Webpage</a> |
-              <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> |
-              <a href="images/PointNorm/IJCNN_2023_Pre.pdf">Slides</a> 
+              <a href="https://arxiv.org/abs/2212.10772">Paper</a> |
+              <a href="https://github.com/ShenZheng2000/LLIE_Survey">Code</a>
               <p>
-                <strong>Motivation</strong>: Current point cloud analysis methods struggles with irregular (i.e., unevenly distributed) point clouds. 
+                <strong>Motivation</strong>: 
+                Existing LLIE datasets focus on either overexposure or underexposure, not both, and usually feature minimally degraded images captured from static positions.
               </p>
               <p>
-                <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
+                <strong>Solution</strong>: 
+                Present a comprehensive survey of low-light image enhancement (LLIE).
+                Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure. 
+                Introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
               </p>
   
             </td>
           </tr>
   
+
+
+
+    <tr onmouseout="Point_cloud_stop()" onmouseover="Point_cloud_start()" id="pointnorm">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='wacv'>
+            <img src="images/PointNorm/PointNorm.png" width="160">
+          </div>
+          <img src='images/PointNorm/PointNorm.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function Point_cloud_start() {
+            document.getElementById('wacv').style.opacity = "1";
+          }
+
+          function Point_cloud_stop() {
+            document.getElementById('wacv').style.opacity = "0";
+          }
+          Point_cloud_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <papertitle>PointNorm: Dual Normalization is All You Need for Point Cloud Analysis</papertitle>
+        <a href="#research-areas">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <br>
+        <strong>Shen Zheng</strong>,
+        Jinqian Pan,
+        Changjie Lu,
+        Gaurav Gupta
+        <br>
+        <em style="display: block; margin: 10px 0 -5px;"> 
+          <strong style="color: red;">IJCNN 2023 (Oral Presentation)</strong> 
+        </em>
+        <br>
+        <a href="https://arxiv.org/abs/2207.06324">Paper</a> |
+        <a href="https://shenzheng2000.github.io/pointnorm.github.io/">Webpage</a> |
+        <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">Code</a> |
+        <a href="images/PointNorm/IJCNN_2023_Pre.pdf">Slides</a> 
+        <p>
+          <strong>Motivation</strong>: Current point cloud analysis methods struggle with irregular (i.e., unevenly distributed) point clouds. 
+        </p>
+        <p>
+          <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
+        </p>
+      </td>
+    </tr>
+
 
 
         <tr onmouseout="LLIE_stop()" onmouseover="LLIE_start()" id="sgz">
@@ -437,6 +491,9 @@
 
 
 
+
+
+
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
@@ -519,7 +576,7 @@
     
 
 
-
+<!-- 
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -532,260 +589,204 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-          <tr onmouseout="LLIE_Survey_stop()" onmouseover="LLIE_Survey_start()"  id="lliesurvey">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='wacv'>
-                <img src="images/LLIE_Survey/Timeline.png" width="160"></div>
-                <img src='images/LLIE_Survey/Timeline.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function LLIE_Survey_start() {
-                  document.getElementById('wacv').style.opacity = "1";
-                }
-  
-                function LLIE_Survey_stop() {
-                  document.getElementById('wacv').style.opacity = "0";
-                }
-                LLIE_Survey_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="https://arxiv.org/abs/2207.06324"> -->
-                <papertitle>Low-Light Image Enhancement: A Comprehensive Survey and Beyond</papertitle>
-              <!-- </a> -->
-              <a href="#research-areas">
-                <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-              </a>
-              <br>
-              <strong>Shen Zheng</strong>,
-              Yiling Ma,
-              Jinqian Pan,
-              Changjie Lu,
-              Gaurav Gupta
-              <br>
-              <em style="display: block; margin: 10px 0 -5px;"> 
-                <strong style="color: red;"></strong> 
-              </em>
-              <br>
-              <a href="https://arxiv.org/abs/2212.10772">Paper</a> |
-              <a href="https://github.com/ShenZheng2000/LLIE_Survey">Code</a>
-              <p>
-                <strong>Motivation</strong>: 
-                Existing LLIE datasets focus on either overexposure or underexposure, not both, and usually feature minimally degraded images captured from static positions.
-              </p>
-              <p>
-                <strong>Solution</strong>: 
-                Present a comprehensive survey of low-light image enhancement (LLIE).
-                Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure. 
-                Introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
-              </p>
-  
-            </td>
-          </tr>
+ -->
 
 
 
+  <!--
+  <tr onmouseout="rain_stop()" onmouseover="rain_start()" id="sapnet">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='rainy'>
+          <img src="images/SAPNet/rainy.png" width="160">
+        </div>
+        <img src='images/SAPNet/derain.png' width="160">
+      </div>
+      <script type="text/javascript">
+        function rain_start() {
+          document.getElementById('rainy').style.opacity = "0";
+        }
 
-
-        <tr onmouseout="rain_stop()" onmouseover="rain_start()" id="sapnet">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='rainy'>
-              <img src="images/SAPNet/rainy.png" width="160"></div>
-              <img src='images/SAPNet/derain.png' width="160">
-            </div>
-            <script type="text/javascript">
-              function rain_start() {
-                document.getElementById('rainy').style.opacity = "0";
-              }
-  
-              function rain_stop() {
-                document.getElementById('rainy').style.opacity = "1";
-              }
-              rain_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/papers/Zheng_SAPNet_Segmentation-Aware_Progressive_Network_for_Perceptual_Contrastive_Deraining_WACVW_2022_paper.pdf"> -->
-              <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
-            <!-- </a> -->
-            <a href="#research-areas">
-              <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-            </a>
-            <br>
-            <strong>Shen Zheng</strong>, 
-            Changjie Lu, 
-            Yuxiong Wu, 
-            Gaurav Gupta
-            <br>
-            <em style="display: block; margin: 10px 0 -5px;"> 
-              <strong style="color: red;">WACVW 2022</strong> 
-            </em>
-            <br>
-            <a href="https://arxiv.org/abs/2111.08892">Paper</a> |
-            <!-- <a href="https://openaccess.thecvf.com/content/WACV2022W/VAQ/supplemental/Zheng_SAPNet_Segmentation-Aware_Progressive_WACVW_2022_supplemental.pdf">Supp</a> | -->
-            <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
-            <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a>
-            <!-- <a href="https://www.youtube.com/watch?v=tJSsICHpsfs">Video</a> -->
-            <p>
-              <strong>Motivation</strong>: Former deraining approaches often eliminate essential background details along with the rain, hindering tasks such as detection and segmentation. 
-            </p>
-              <p>
-                <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
-            </p>
-          </td>
-        </tr>
-  
+        function rain_stop() {
+          document.getElementById('rainy').style.opacity = "1";
+        }
+        rain_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <papertitle>SAPNet: Segmentation-Aware Progressive Network for Perceptual Contrastive Deraining</papertitle>
+      <a href="#research-areas">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <br>
+      <strong>Shen Zheng</strong>, 
+      Changjie Lu, 
+      Yuxiong Wu, 
+      Gaurav Gupta
+      <br>
+      <em style="display: block; margin: 10px 0 -5px;"> 
+        <strong style="color: red;">WACVW 2022</strong> 
+      </em>
+      <br>
+      <a href="https://arxiv.org/abs/2111.08892">Paper</a> |
+      <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">Code</a> |
+      <a href="images/SAPNet/SAPNet_Slides.pdf">Slides</a>
+      <p>
+        <strong>Motivation</strong>: Former deraining approaches often eliminate essential background details along with the rain, hindering tasks such as detection and segmentation. 
+      </p>
+      <p>
+        <strong>Solution</strong>: SAPNet, an image-deraining network that integrates low-level image-deraining and high-level background segmentation using progressive dilated unit, perceptual contrastive loss, and unsupervised background segmentation.
+      </p>
+    </td>
+  </tr>
+  -->
+    
   
 
  
-            <!-- Maybe: Use images, not figures -->
-              <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='UDA_VAE++'>
-                    <img src="images/UDA_VAE++/UDA_VAE++.png" width="160"></div>
-                    <img src='images/UDA_VAE++/UDA_VAE++.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function UDA_start() {
-                      document.getElementById('mine').style.opacity = "1";
-                    }
-    
-                    function UDA_stop() {
-                      document.getElementById('mine').style.opacity = "0";
-                    }
-                    UDA_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <!-- <a href="https://arxiv.org/pdf/2204.09334.pdf"> -->
-                    <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
-                      Mutual Information Maximization</papertitle>
-                  <!-- </a> -->
-                  <a href="#research-areas">
-                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-                  </a>
-                  <br>
-                  Changjie Lu, 
-                  <strong>Shen Zheng</strong>, 
-                  Gaurav Gupta
-                  <br>
-                  <em style="display: block; margin: 10px 0 -5px;"> 
-                    <strong style="color: red;">CVPRW 2022</strong> 
-                  </em> 
-                  <br>
-                  <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> |
-                  <!-- <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/supplemental/Lu_Unsupervised_Domain_Adaptation_CVPRW_2022_supplemental.pdf">Supp</a> | -->
-                  <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> |
-                  <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
-    
-                  <p>
-                    <strong>Motivation</strong>: Previous unsupervised domain adaptation methods for medical imaging falter across varied imaging modalities due to substantial domain differences.
-                  </p>
-                  <p>
-                    <strong>Solution</strong>: UDA-VAE++, an unsupervised domain adaptation framework that leverages mutual information maximization and sequential reparameterization for cardiac segmentation.
-                  </p>
-                </td>
-              </tr>
-    
-    
-              <tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()" id="debluryolo">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='blur'>
-                    <img src="images/Deblur_YOLO/baby_blur.png" width="160"></div>
-                    <img src='images/Deblur_YOLO/baby_deblurYolo.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function ijcnn_start() {
-                      document.getElementById('blur').style.opacity = "0";
-                    }
-    
-                    function ijcnn_stop() {
-                      document.getElementById('blur').style.opacity = "1";
-                    }
-                    ijcnn_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <!-- <a href="https://ieeexplore.ieee.org/document/9534352/"> -->
-                    <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
-                  <!-- </a> -->
-                  <a href="#research-areas">
-                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-                  </a>
-                  <br>
-                  <strong>Shen Zheng</strong>, 
-                  Yuxiong Wu,
-                  Shiyu Jiang,
-                  Changjie Lu, 
-                  Gaurav Gupta
-                  <br>
-                  <em style="display: block; margin: 10px 0 -5px;"> 
-                    <strong style="color: red;">IJCNN 2021 (Oral Presentation)</strong> 
-                  </em> 
-                  <br>
-                  <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> |
-                  <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
-                  <p>
-                    <strong>Motivation</strong>: Object detection algorithms exhibit suboptimal performance on blurry scenes.
-                  </p>
-                  <p>
-                    <strong>Solution</strong>: Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
-                  to deal with photographs corrupted by motion blur.
-                  </p>
-                </td>
-              </tr>
-    
-              <tr onmouseout="EES_stop()" onmouseover="EES_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='EES'>
-                    <img src="images/EES/EES.png" width="160"></div>
-                    <img src='images/EES/EES.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function EES_start() {
-                      document.getElementById('EES').style.opacity = "1";
-                    }
-    
-                    function EES_stop() {
-                      document.getElementById('EES').style.opacity = "0";
-                    }
-                    UDA_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <!-- <a href="images/AS_IntroVAE/AS_IntroVAE_Paper.pdf"> -->
-                    <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
-                  <!-- </a> -->
-                  <a href="#research-areas">
-                    <i class="fa-solid fa-house"></i> <!-- This adds a left arrow icon -->
-                  </a>
-                  <br>
-                  <strong>Shen Zheng</strong>, 
-                  Liwei Wang,
-                  Gaurav Gupta
-                  <br>
-                  <em style="display: block; margin: 10px 0 -5px;"> 
-                    <strong style="color: red;">CVIP 2020 (Oral Presentation)</strong> 
-                  </em> 
-                  <br>
-                  <!-- <a href="">code</a> / -->
-                  <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> |
-                  <a href="images/EES/EES_Slides.pdf">Slides</a>
-                  <p>
-                    <strong>Motivation</strong>: Existing ConvNets have poor computational complexity and require significant memory consumption.
-                  </p>  
-                  <p>
-                    <strong>Solution</strong>: Introduce an efficient ConvNet with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
-                  </p>
-                </td>
-              </tr>
-    
+ <!--
+<tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='UDA_VAE++'>
+        <img src="images/UDA_VAE++/UDA_VAE++.png" width="160">
+      </div>
+      <img src='images/UDA_VAE++/UDA_VAE++.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function UDA_start() {
+        document.getElementById('mine').style.opacity = "1";
+      }
+
+      function UDA_stop() {
+        document.getElementById('mine').style.opacity = "0";
+      }
+      UDA_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <papertitle>Unsupervised Domain Adaptation for Cardiac Segmentation: Towards Structure
+      Mutual Information Maximization</papertitle>
+    <a href="#research-areas">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <br>
+    Changjie Lu, 
+    <strong>Shen Zheng</strong>, 
+    Gaurav Gupta
+    <br>
+    <em style="display: block; margin: 10px 0 -5px;"> 
+      <strong style="color: red;">CVPRW 2022</strong> 
+    </em> 
+    <br>
+    <a href="https://openaccess.thecvf.com/content/CVPR2022W/Precognition/papers/Lu_Unsupervised_Domain_Adaptation_for_Cardiac_Segmentation_Towards_Structure_Mutual_Information_CVPRW_2022_paper.pdf">Paper</a> |
+    <a href="https://github.com/LOUEY233/Toward-Mutual-Information">Code</a> |
+    <a href="images/UDA_VAE++/UDA_VAE++.pdf">Slides</a> 
+
+    <p>
+      <strong>Motivation</strong>: Previous unsupervised domain adaptation methods for medical imaging falter across varied imaging modalities due to substantial domain differences.
+    </p>
+    <p>
+      <strong>Solution</strong>: UDA-VAE++, an unsupervised domain adaptation framework that leverages mutual information maximization and sequential reparameterization for cardiac segmentation.
+    </p>
+  </td>
+</tr>
+-->
+   
+
+
+<!--
+<tr onmouseout="ijcnn_stop()" onmouseover="ijcnn_start()" id="debluryolo">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='blur'>
+        <img src="images/Deblur_YOLO/baby_blur.png" width="160">
+      </div>
+      <img src='images/Deblur_YOLO/baby_deblurYolo.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function ijcnn_start() {
+        document.getElementById('blur').style.opacity = "0";
+      }
+
+      function ijcnn_stop() {
+        document.getElementById('blur').style.opacity = "1";
+      }
+      ijcnn_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <papertitle>Deblur-YOLO: Real-Time Object Detection with Efficient Blind Motion Deblurring</papertitle>
+    <a href="#research-areas">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <br>
+    <strong>Shen Zheng</strong>, 
+    Yuxiong Wu,
+    Shiyu Jiang,
+    Changjie Lu, 
+    Gaurav Gupta
+    <br>
+    <em style="display: block; margin: 10px 0 -5px;"> 
+      <strong style="color: red;">IJCNN 2021 (Oral Presentation)</strong> 
+    </em> 
+    <br>
+    <a href="https://ieeexplore.ieee.org/document/9534352/">Paper</a> |
+    <a href="images/Deblur_YOLO/Deblur_YOLO_Slides.pdf">Slides</a>
+    <p>
+      <strong>Motivation</strong>: Object detection algorithms exhibit suboptimal performance on blurry scenes.
+    </p>
+    <p>
+      <strong>Solution</strong>: Propose Deblur-YOLO, a generative adversarial network with a dilated feature pyramid generator, double multi-scale discriminators, and a detection discriminator
+      to deal with photographs corrupted by motion blur.
+    </p>
+  </td>
+</tr>
+
+<tr onmouseout="EES_stop()" onmouseover="EES_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='EES'>
+        <img src="images/EES/EES.png" width="160">
+      </div>
+      <img src='images/EES/EES.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function EES_start() {
+        document.getElementById('EES').style.opacity = "1";
+      }
+
+      function EES_stop() {
+        document.getElementById('EES').style.opacity = "0";
+      }
+      UDA_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <papertitle>Efficient Ensemble Sparse Convolutional Neural Networks with Dynamic Batch Size</papertitle>
+    <a href="#research-areas">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <br>
+    <strong>Shen Zheng</strong>, 
+    Liwei Wang,
+    Gaurav Gupta
+    <br>
+    <em style="display: block; margin: 10px 0 -5px;"> 
+      <strong style="color: red;">CVIP 2020 (Oral Presentation)</strong> 
+    </em> 
+    <br>
+    <a href="https://link.springer.com/chapter/10.1007/978-981-16-1103-2_23">Paper</a> |
+    <a href="images/EES/EES_Slides.pdf">Slides</a>
+    <p>
+      <strong>Motivation</strong>: Existing ConvNets have poor computational complexity and require significant memory consumption.
+    </p>  
+    <p>
+      <strong>Solution</strong>: Introduce an efficient ConvNet with weighted average stacking, Winograd-ReLU-based network pruning, and a electromagnetic-inspired dynamic batch size algorithm.
+    </p>
+  </td>
+</tr>
+-->
 
 
    
