@@ -72,7 +72,7 @@
 
             <p>
               My current research focuses on semantic-aware image warping and contrastive learning 
-              (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#instancewarp">Instance-Warp</a>) to enhance visual details 
+              (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>, <a href="#tpsence">TPSeNCE</a>) to enhance visual details 
               in generative models and improve the understanding of small and long-tail objects (e.g.,  <a href="#roadwork">ROADWork</a>) in discriminative models.
             </p>
 
@@ -126,7 +126,7 @@
 
 
 
-          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
+          <tr onmouseout="WarpI2I_Stop()" onmouseover="WarpI2I_start()" id="warpi2i">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -176,7 +176,7 @@
 
 
 
-          <tr onmouseout="WarpI2I_Stop()" onmouseover="WarpI2I_start()" id="warpi2i">
+          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
@@ -184,11 +184,11 @@
                 <img src="images/RoadWork/roadwork.png" width="160">
               </div>
               <script type="text/javascript">
-                function WarpI2I_start() {
+                function Road_start() {
                   document.getElementById('wacv').style.opacity = "1";
                 }
   
-                function WarpI2I_Stop() {
+                function Road_Stop() {
                   document.getElementById('wacv').style.opacity = "0";
                 }
                 Road_Stop()
