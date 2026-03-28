@@ -125,6 +125,57 @@
 
 
 
+
+          <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='wacv'>
+                <img src="images/WarpI2I/Teaser.png" width="160"></div>
+                <img src="images/WarpI2I/Teaser.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function Road_start() {
+                  document.getElementById('wacv').style.opacity = "1";
+                }
+  
+                function Road_Stop() {
+                  document.getElementById('wacv').style.opacity = "0";
+                }
+                Road_Stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Image Warping for Image-to-Image Translation</papertitle>
+              <a href="#research-areas">
+                <i class="fa-solid fa-house"></i>
+              </a>
+              <br>
+              <strong>Shen Zheng</strong>, Anurag Ghosh, Gaurav Parmar, Srinivasa Narasimhan
+              <br>
+              <em style="display: block; margin: 10px 0 -5px;"> 
+                <strong style="color: red;">Under Review </strong> 
+              </em>
+              <br>
+              <p>
+                <strong>Motivation</strong>: 
+                Low-capacity image-to-image translation models often struggle to preserve fine details 
+                because they compress high-resolution inputs into a spatially downsampled latent space.
+              </p>
+              <p>
+                <strong>Solution</strong>: 
+                We warp the input image to enlarge salient regions (e.g., objects, faces, eyes) 
+                so they are better preserved during image-to-image translation in the compressed latent representation.
+              </p>
+  
+            </td>
+          </tr>
+
+
+
+
+
+
+
           <tr onmouseout="Road_Stop()" onmouseover="Road_start()" id="roadwork">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -161,11 +212,13 @@
               <br>
               <p>
                 <strong>Motivation</strong>: 
-                Navigating through work zones is challenging due to a lack of large-scale open datasets.
+                Navigating work zones is challenging due to the lack of large-scale datasets capturing their complexity and variability.
               </p>
               <p>
                 <strong>Solution</strong>: 
-                Introduce the ROADWork dataset, which is so far the largest open-source work zone dataset, to help learn how to recognize, observe, analyze, and drive through work zones.
+                We introduce ROADWork, a large-scale open-source dataset and benchmark 
+                with fine-grained annotations and scene descriptions
+                to support robust perception and navigation in complex construction zones.
               </p>
   
             </td>
@@ -180,8 +233,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='wacv'>
-                <img src="images/Inst_Warp/da-badweather.png" width="160"></div>
-                <img src="images/Inst_Warp/da-badweather.png" width="160">
+                <img src="images/Inst_Warp/Warp_Image.png" width="160"></div>
+                <img src="images/Inst_Warp/Warp_Image.png" width="160">
               </div>
               <script type="text/javascript">
                 function Inst_start() {
@@ -214,11 +267,13 @@
               <br>
               <p>
                 <strong>Motivation</strong>: 
-                Domain adaptation methods struggle to learn smaller objects amidst dominant backgrounds with high cross-domain variations.
+                In domain adaptation, backgrounds occupy more pixels and exhibit larger cross-domain variations, making them harder to adapt, 
+                while foreground objects occupy fewer pixels and are less diverse, thus easier to adapt.
               </p>
               <p>
                 <strong>Solution</strong>: 
-                Warp source-domain images in-place using instance-level saliency to oversample objects and undersample backgrounds during domain adaptation training.
+                We warp the image at instance-level to oversample easier-to-adapt foreground objects 
+                and undersample harder-to-adapt background regions to improve feature representation in domain adaptation.
               </p>
             </td>
           </tr>
@@ -270,8 +325,8 @@
               </p>
               <p>
                 <strong>Solution</strong>: 
-                Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions during rain generation.  
-                Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to optimize the amounts of generated rain. 
+                Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions.  
+                Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to stabilize the amounts of generated rain. 
                 Show that realistic rain generation benefits deraining and object detection in rain. 
               </p>
   
@@ -511,7 +566,7 @@
               </p>
 
               <p>
-               (WIP) Improved Online HD Map Construction using long-term and short-term memory fusion. 
+              Improved Online HD Map Construction using long-term and short-term memory fusion. 
             </p>
 
 
@@ -534,7 +589,7 @@
               <p>
                 Working as a perception software engineer in the ADAS perception team responsible for ADAS parking, traffic light detection, and blockage detection.
             </p>
-
+<!-- 
             <p>
               Improved BEVFormer for ADAS parking (reverse & parallel) by using extrinsic calibration to interpolate and smooth edges to enhance curb detection.
             </p>
@@ -545,7 +600,7 @@
 
             <p>
               Developed a binary semantic segmentation model based on CenterNet to detect blockages such as ice, snow, mud, mud blur, rain drops, and sun glares, achieving 93%+ IoU. 
-            </p>
+            </p> -->
 
             <!-- <p>
               Improved battery template matching to ensure success across all captured battery images, including in low-light or overexposed conditions.
@@ -573,7 +628,7 @@
               <p>
               Responsible for long-tailed data augmentation, training data auto-labeling and cleaning, and model evaluation for traffic light detection algorithms.
             </p>
-
+<!-- 
             <p>
               Implemented CycleGAN to conduct unsupervised data augmentation, converting traffic light bulbs from left arrow to round & leftUturn arrow.
             </p>
@@ -585,6 +640,7 @@
             <p>
               Increased the classification accuracy for leftUturn traffic light from 78.41% to 87.27%, and the mean average precision from 93.01% to 94.80%.
             </p>
+             -->
             </td>
           </tr>
  
@@ -637,7 +693,7 @@
 
 
 
-          <tr>
+          <!-- <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/WKU/WKU.png" style="width: 185px;"></td>
             <td width="75%" valign="center">
               <strong>Co-Instructor</strong> at <a href="https://www.wku.edu.cn/en/">Wenzhou-Kean University</a>
@@ -657,12 +713,13 @@
               <!-- <br>
               I take the responsibility of 
               <a href="https://github.com/WKUAILAB/AI_Tutorial/tree/main/CV">Computer Vision</a>. -->
-            </td>
-          </tr>
+            <!-- </td>
+          </tr> 
+        -->
 
 
 
-      
+<!--       
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -677,7 +734,7 @@
             </td>
           </tr>
             </td>
-          </tr>
+          </tr> -->
 
 
 
@@ -757,7 +814,7 @@
                   </span>
                   <a href="https://www.linkedin.com/in/wanying-dou-540bb4207/">婉莹心态,</a>
                   <span>
-                    <a href="https://mwxinnn.github.io/about/">芯</a>-<a href="https://scholar.google.com/citations?user=jPfElXcAAAAJ&hl=zh-CN">玲</a>-<a href="http://www.guoxue.com/master/wangguowei/w-rjch01.htm">境界</a>
+                    <a href="https://mwxinnn.github.io/about/">雯芯菩萨</a>
                   </span>
                 </div>
 
