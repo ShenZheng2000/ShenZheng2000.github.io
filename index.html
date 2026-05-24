@@ -69,34 +69,24 @@
               <td id="research-areas" style="padding:20px;width:100%;vertical-align:middle">
                 <heading>Research Areas</heading>
 
-
-      <p>
-      Inside a street-scene dataset, <strong>99% of images are easy and common scenes </strong>(e.g., clear day), 
-      whereas <strong>1% are long-tails</strong> (e.g., bad weather, low-light night). 
-       </p>
-
-
-      <p>
-      Inside a street-scene image, <strong>90% of pixels are uninformative regions</strong> (e.g., sky, buildings), 
-      whereas <strong>10% are salient regions</strong> (e.g., persons, cars).
-       </p>
       
-
-        <p>
-      One of my research directions (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>) 
-      aims to synthesize or collect these <strong>1% long-tail scenes</strong>.
-          </p>
-
       <p>
-      Another research direction of mine (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>) 
-      aims to oversample and better utilize the <strong>10% salient regions</strong>.
-          </p>
+      Modern deep learning models require <strong>many images with many manual labels</strong> to train. 
 
-       <p>
-      I am currently exploring foundation models (TTT, self-supervised) 
-      to automatically annotate <strong>99% common scenes </strong>
-      and better generalize to <strong>1% long-tail scenes</strong>,
-       </p>
+      However, not all of them are necessary. 
+
+      For example, <strong>99%</strong> of images in street-scene datasets are common (e.g., clear day), 
+      while <strong>1%</strong> are long-tail (e.g., bad weather, low-light night). 
+      Similarly, <strong>90%</strong> of pixels are uninformative (e.g., sky, buildings), 
+      while <strong>10%</strong> are salient (e.g., persons, cars).
+      </p>
+
+
+    <p>My research addresses this inefficiency from two angles:</p>
+    <ul>
+      <li><strong>Compute efficiency</strong>: synthesizing or collecting long-tail scenes (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>) and oversampling salient regions (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>).</li>
+      <li><strong>Label efficiency</strong>: TTT/adaptation and foundation model pseudo-labels to reduce manual annotation.</li>
+    </ul>
 
       <!-- My current research focuses on semantic-aware image warping and contrastive learning 
       (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>, <a href="#tpsence">TPSeNCE</a>) to enhance visual details 
