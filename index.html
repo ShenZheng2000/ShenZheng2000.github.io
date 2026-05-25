@@ -71,18 +71,25 @@
 
       
       <p>
-      Modern deep learning models require <strong>many images with many manual labels</strong> to train. 
+      Modern deep learning models are <strong>inefficient</strong>: 
+      they are trained on many common-scene images with large uninformative regions 
+      and often require manual labels, 
+      wasting both compute and annotation effort.
+      </p>
 
+      <p>
+      My research addresses this inefficiency from two angles:
+      </p>
+
+<!-- 
       However, not all of them are necessary. 
 
       For example, <strong>99%</strong> of images in street-scene datasets are common (e.g., clear day), 
       while <strong>1%</strong> are long-tail (e.g., bad weather, low-light night). 
       Similarly, <strong>90%</strong> of pixels are uninformative (e.g., sky, buildings), 
-      while <strong>10%</strong> are salient (e.g., persons, cars).
-      </p>
+      while <strong>10%</strong> are salient (e.g., persons, cars). -->
 
-
-    <p>My research addresses this inefficiency from two angles:</p>
+    <!-- <p>My research addresses this inefficiency from two angles:</p> -->
     <ul>
       <li><strong>Compute efficiency</strong>: synthesizing or collecting long-tail scenes (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>) and oversampling salient regions (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>).</li>
       <li><strong>Label efficiency</strong>: TTT/adaptation and foundation model pseudo-labels to reduce manual annotation.</li>
