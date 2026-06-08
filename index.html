@@ -181,13 +181,13 @@
               <br>
               <a href="https://shenzheng2000.github.io/WarpI2I.github.io/">[Webpage]</a>
               <br>
-              <p>
+              <!-- <p>
                 <strong>Motivation</strong>: 
                 Low-capacity image-to-image translation models often struggle to preserve fine details 
                 because they compress high-resolution inputs into a spatially downsampled latent space.
-              </p>
+              </p> -->
               <p>
-                <strong>Solution</strong>: 
+                <!-- <strong>Solution</strong>:  -->
                 We warp the input image to enlarge salient regions (e.g., objects, faces, eyes) 
                 so they are better preserved during image-to-image translation in the compressed latent representation.
               </p>
@@ -235,12 +235,12 @@
                <a href="http://www.cs.cmu.edu/~ILIM/roadwork_dataset/">[Webpage]</a>
                <a href="https://github.com/anuragxel/roadwork-dataset">[GitHub]</a>
               <br>
-              <p>
+              <!-- <p>
                 <strong>Motivation</strong>: 
                 Navigating work zones is challenging due to the lack of large-scale datasets capturing their complexity and variability.
-              </p>
+              </p> -->
               <p>
-                <strong>Solution</strong>: 
+                <!-- <strong>Solution</strong>:  -->
                 We introduce ROADWork, a large-scale open-source dataset and benchmark 
                 with fine-grained annotations and scene descriptions
                 to support robust perception and navigation in complex construction zones.
@@ -290,13 +290,13 @@
                <a href="https://instancewarp.github.io/">[Webpage]</a>
                <a href="https://github.com/ShenZheng2000/Instance-Warp">[Code]</a>
               <br>
-              <p>
+              <!-- <p>
                 <strong>Motivation</strong>: 
                 In domain adaptation, backgrounds occupy more pixels and exhibit larger cross-domain variations, making them harder to adapt, 
                 while foreground objects occupy fewer pixels and are less diverse, thus easier to adapt.
-              </p>
+              </p> -->
               <p>
-                <strong>Solution</strong>: 
+                <!-- <strong>Solution</strong>:  -->
                 We warp the image at instance-level to oversample easier-to-adapt foreground objects 
                 and undersample harder-to-adapt background regions to improve feature representation in domain adaptation.
               </p>
@@ -344,12 +344,12 @@
               <!-- <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zheng_TPSeNCE_Towards_Artifact-Free_WACV_2024_supplemental.pdf">Supp</a> | -->
               <a href="images/TPSeNCE/TPSeNCE_Slides.pdf">[Slides]</a>
               <a href="images/TPSeNCE/TPSeNCE_Poster.pdf">[Poster]</a>
-              <p>
+              <!-- <p>
                 <strong>Motivation</strong>: 
                 Previous image-to-image translation methods produce artifacts and distortions, and lack control over the amount of rain generated. 
-              </p>
+              </p> -->
               <p>
-                <strong>Solution</strong>: 
+                <!-- <strong>Solution</strong>:  -->
                 Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions.  
                 Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to stabilize the amounts of generated rain. 
                 Show that realistic rain generation benefits deraining and object detection in rain. 
@@ -399,12 +399,12 @@
               <br>
               <a href="https://arxiv.org/abs/2212.10772">[Paper]</a>
               <a href="https://github.com/ShenZheng2000/LLIE_Survey">[Code]</a>
-              <p>
+              <!-- <p>
                 <strong>Motivation</strong>: 
                 Existing LLIE datasets focus on either overexposure or underexposure, not both, and usually feature minimally degraded images captured from static positions.
-              </p>
+              </p> -->
               <p>
-                <strong>Solution</strong>: 
+                <!-- <strong>Solution</strong>:  -->
                 Present a comprehensive survey of low-light image enhancement (LLIE).
                 Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure. 
                 Introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
@@ -454,11 +454,12 @@
         <a href="https://shenzheng2000.github.io/pointnorm.github.io/">[Webpage]</a>
         <a href="https://github.com/ShenZheng2000/PointNorm-for-Point-Cloud-Analysis">[Code]</a>
         <a href="images/PointNorm/IJCNN_2023_Pre.pdf">[Slides]</a> 
-        <p>
+        <!-- <p>
           <strong>Motivation</strong>: Current point cloud analysis methods struggle with irregular (i.e., unevenly distributed) point clouds. 
-        </p>
+        </p> -->
         <p>
-          <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) that leverages local mean and global standard deviation.
+          <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) 
+          that leverages local mean and global standard deviation to address irregular (i.e., unevenly distributed) point clouds
         </p>
       </td>
     </tr>
@@ -502,11 +503,15 @@
             <a href="https://shenzheng2000.github.io/sgz.github.io/">[Webpage]</a>
             <a href="https://github.com/ShenZheng2000/Semantic-Guided-Low-Light-Image-Enhancement">[Code]</a>
             <a href="images/SGZ/SGZ_Slides.pdf">[Slides]</a>
-            <p>
+            <!-- <p>
               <strong>Motivation</strong>: Current low-light image enhancement methods cannot handle uneven illuminations, is computationally inefficient, and fail to preserve the semantic information. 
-            </p>
+            </p> -->
             <p>
-              <strong>Solution</strong>: Introduce SGZ, a zero-shot low-light image enhancement framework with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation.
+              <!-- <strong>Solution</strong>:  -->
+              Introduce SGZ, a zero-shot low-light image enhancement framework 
+              with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation
+              to enhance unevenly illuminated images and videos. 
+
             </p>
           </td>
         </tr>
@@ -553,11 +558,12 @@
             <a href="https://arxiv.org/pdf/2206.13903.pdf">[Paper]</a>       
             <a href="https://github.com/ShenZheng2000/SAPNet-for-image-deraining">[Code]</a>
             <a href="images/AS_IntroVAE/AS_IntroVAE_Slides.pdf">[Slides]</a>
-            <p>
+            <!-- <p>
               <strong>Motivation</strong>: Generative models experience posterior collapse and vanishing gradient due to no effective metric for real-fake image evaluation.
-            </p>
+            </p> -->
             <p>
-              <strong>Solution</strong>: Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
+              <!-- <strong>Solution</strong>:  -->
+              Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
               collapse and the vanishing gradient problem in image generation in one go. 
             </p>
           </td>
