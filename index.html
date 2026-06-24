@@ -72,9 +72,8 @@
       
       <p>
       Modern deep learning models are <strong>inefficient</strong>: 
-      they are trained on many common-scene images with large uninformative regions 
-      and often require manual labels, 
-      wasting both compute and annotation effort.
+      they are trained on many common-scene images with large uninformative regions.
+      <!-- and often require manual labels. -->
       </p>
 
       <p>
@@ -89,11 +88,18 @@
       Similarly, <strong>90%</strong> of pixels are uninformative (e.g., sky, buildings), 
       while <strong>10%</strong> are salient (e.g., persons, cars). -->
 
-    <!-- <p>My research addresses this inefficiency from two angles:</p> -->
-    <ul>
-      <li><strong>Compute efficiency</strong>: synthesizing or collecting long-tail scenes (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>) and oversampling salient regions (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>).</li>
-      <li><strong>Label efficiency</strong>: Weak supervision with foundation-model pseudo-labels to reduce manual annotation.</li>
-    </ul>
+      <!-- <p>My research addresses this inefficiency from two angles:</p> -->
+  <ul>
+    <li><strong>Data efficiency</strong>: synthesizing or collecting long-tail scenes 
+      (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>)
+    </li>
+    <li><strong>Compute efficiency</strong>: oversampling salient regions 
+      (e.g., <a href="#instancewarp">Instance-Warp</a>, <a href="#warpi2i">WarpI2I</a>), 
+      and reducing spatial redundancy (e.g., <a href="#mapthunder">MapThunder</a>)
+    </li>
+  </ul>
+
+     <!-- <li><strong>Label efficiency</strong>: Weak supervision with foundation-model pseudo-labels to reduce manual annotation.</li> -->
 
       <!-- My current research focuses on semantic-aware image warping and contrastive learning 
       (e.g., <a href="#warpi2i">WarpI2I</a>, <a href="#instancewarp">Instance-Warp</a>, <a href="#tpsence">TPSeNCE</a>) to enhance visual details 
@@ -177,12 +183,12 @@
     <strong>Shen Zheng</strong>, et al.
     <br>
     <em style="display: block; margin: 10px 0 -5px;"> 
-      <strong style="color: red;">Coming Soon</strong> 
+      <strong style="color: red;">Coming Soon!</strong> 
     </em>
     <br>
     <p>
       We build an online vectorized HD map construction method with fewer tokens, 
-      faster inference, and better accuracy across nuScenes and Argoverse.
+      faster inference, and better accuracy.
     </p>
 
   </td>
@@ -230,8 +236,8 @@
               </p> -->
               <p>
                 <!-- <strong>Solution</strong>:  -->
-                We warp the input image to enlarge salient regions (e.g., objects, faces, eyes) 
-                so they are better preserved during image-to-image translation in the compressed latent representation.
+                We warp the input image to enlarge salient regions (e.g., faces, eyes, objects) 
+                to better preserve fine details in the compressed latent space during I2I.
               </p>
   
             </td>
@@ -284,8 +290,7 @@
               <p>
                 <!-- <strong>Solution</strong>:  -->
                 We introduce ROADWork, a large-scale open-source dataset and benchmark 
-                with fine-grained annotations and scene descriptions
-                to support robust perception and navigation in complex construction zones.
+                with fine-grained annotations and scene descriptions for driving in work zones.
               </p>
   
             </td>
@@ -339,8 +344,8 @@
               </p> -->
               <p>
                 <!-- <strong>Solution</strong>:  -->
-                We warp the image at instance-level to oversample easier-to-adapt foreground objects 
-                and undersample harder-to-adapt background regions to improve feature representation in domain adaptation.
+                We warp the image at instance-level to oversample foreground objects 
+                and undersample background regions to improve domain adaptation.
               </p>
             </td>
           </tr>
@@ -392,9 +397,8 @@
               </p> -->
               <p>
                 <!-- <strong>Solution</strong>:  -->
-                Introduce a Triangular Probability Similarity (TPS) loss to minimize the artifacts and distortions.  
-                Propose a Semantic Noise Contrastive Estimation (SeNCE) strategy to stabilize the amounts of generated rain. 
-                Show that realistic rain generation benefits deraining and object detection in rain. 
+                We introduce TPSeNCE, a rain generation framework with Triangular Probability Similarity (TPS) 
+                and Semantic Noise Contrastive Estimation (SeNCE) for realistic rainy scene synthesis.
               </p>
   
             </td>
@@ -447,9 +451,10 @@
               </p> -->
               <p>
                 <!-- <strong>Solution</strong>:  -->
-                Present a comprehensive survey of low-light image enhancement (LLIE).
-                Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure. 
-                Introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
+                Present a comprehensive survey of low-light image enhancement (LLIE) and 
+                introduce Night Wenzhou, a large-scale, high-resolution video dataset captured in fast motion with diverse illuminations and degradation.
+                <!-- Propose the SICE_Grad and SICE_Mix image datasets, which include images with both overexposure and underexposure.  -->
+                
               </p>
   
             </td>
@@ -500,8 +505,8 @@
           <strong>Motivation</strong>: Current point cloud analysis methods struggle with irregular (i.e., unevenly distributed) point clouds. 
         </p> -->
         <p>
-          <strong>Solution</strong>: PointNorm, a point cloud analysis network with a DualNorm module (Point Normalization & Reverse Point Normalization) 
-          that leverages local mean and global standard deviation to address irregular (i.e., unevenly distributed) point clouds
+           PointNorm, a point cloud analysis network with a DualNorm module 
+          that leverages local mean and global standard deviation to address irregular (i.e., unevenly distributed) point clouds.
         </p>
       </td>
     </tr>
@@ -550,14 +555,16 @@
             </p> -->
             <p>
               <!-- <strong>Solution</strong>:  -->
-              Introduce SGZ, a zero-shot low-light image enhancement framework 
-              with pixel-wise light deficiency estimation, parameter-free recurrent image enhancement, and unsupervised semantic segmentation
-              to enhance unevenly illuminated images and videos. 
+              We introduce SGZ, a zero-shot low-light image and video enhancement framework at 1000 FPS
+              with pixel-wise light deficiency estimation, recurrent image enhancement, and unsupervised semantic segmentation
 
             </p>
           </td>
         </tr>
 
+
+        <!-- parameter-free  -->
+        <!-- to enhance unevenly illuminated images and videos -->
 
         
         <tr onmouseout="ACML_stop()" onmouseover="ACML_start()"  id="asintrovae">
@@ -605,7 +612,7 @@
             </p> -->
             <p>
               <!-- <strong>Solution</strong>:  -->
-              Propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
+              We propose Adversarial Similarity Distance Introspective Variational Autoencoder (AS-IntroVAE), which can address the posterior
               collapse and the vanishing gradient problem in image generation in one go. 
             </p>
           </td>
