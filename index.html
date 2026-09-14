@@ -70,34 +70,33 @@
               <td id="research-areas" style="padding:20px;width:100%;vertical-align:middle">
                 <heading>Research Areas</heading>
 
-      
+<!--       
       <p>
-      Modern deep learning models are <strong>inefficient</strong>: 
-      they are trained on many common-scene images with large uninformative regions.
-      <!-- and often require manual labels. -->
-      </p>
+      Modern deep learning models are <strong>inefficient</strong>, 
+      since they are trained on many common-scene images with large uninformative regions.
+      </p> -->
 
-      <p>
-      My research addresses this inefficiency from two angles:
-      </p>
+  <p>
+  My research focuses on <strong>data- and compute-efficient learning</strong>
+  for autonomous vehicles and embodied AI. Representative works include:
+</p>
 
-<!-- 
-      However, not all of them are necessary. 
+<ul>
+  <li>
+    <strong>Scene Understanding:</strong>
+      <a href="#mapthunder">MapThunder</a>,
+      <a href="#roadwork">ROADWork</a>,
+    <a href="#instancewarp">Instance-Warp</a>
+  </li>
 
-      For example, <strong>99%</strong> of images in street-scene datasets are common (e.g., clear day), 
-      while <strong>1%</strong> are long-tail (e.g., bad weather, low-light night). 
-      Similarly, <strong>90%</strong> of pixels are uninformative (e.g., sky, buildings), 
-      while <strong>10%</strong> are salient (e.g., persons, cars). -->
+  <li>
+    <strong>Generative Modeling:</strong>
+    <a href="#warpi2i">WarpI2I</a>,
+    <a href="#tpsence">TPSeNCE</a>
+  </li>
+</ul>
 
-      <!-- <p>My research addresses this inefficiency from two angles:</p> -->
-  <ul>
-    <li><strong>Data efficiency</strong>: synthesizing or collecting long-tail scenes 
-      (e.g., <a href="#tpsence">TPSeNCE</a>, <a href="#roadwork">ROADWork</a>)
-    </li>
-    <li><strong>Compute efficiency</strong>: focusing on important regions to reduce spatial redundancy
-      (e.g., <a href="#instancewarp">Instance-Warp</a>, <a href="#warpi2i">WarpI2I</a>, <a href="#mapthunder">MapThunder</a>), 
-    </li>
-  </ul>
+
 
      <!-- <li><strong>Label efficiency</strong>: Weak supervision with foundation-model pseudo-labels to reduce manual annotation.</li> -->
 
@@ -175,7 +174,7 @@
     </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
-      <papertitle>MapThunder: Fewer Faster Better Online Vectorized HD Map Construction</papertitle>
+      <papertitle>MapThunder: Online Vectorized HD Map Construction with Compressed Tokens</papertitle>
     <a href="#research-areas">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
@@ -187,8 +186,9 @@
     </em>
     <br>
     <p>
-      We propose an online vectorized HD map construction method with fewer tokens, 
-      faster inference, and better accuracy, generalizing to VLM, VLA, and virtual cities. 
+      We propose an online vectorized HD map construction method 
+      that features fewer tokens, faster inference, and higher accuracy 
+      while generalizing effectively to 3D detection and trajectory prediction tasks. 
     </p>
 
   </td>
