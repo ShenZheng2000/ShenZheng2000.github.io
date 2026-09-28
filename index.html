@@ -28,31 +28,28 @@
 
 
             <p>
-            I am a second-year PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, Carnegie Mellon University (CMU), 
+            I am a third-year PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, Carnegie Mellon University (CMU), 
             advised by <a href="http://www.cs.cmu.edu/~srinivas/">Dr. Srinivasa Narasimhan</a>. 
-            I have interned at <a href="https://waymo.com/">Waymo</a> and <a href="https://www.momenta.cn/">Momenta</a>, 
-            and worked at <a href="https://lucidmotors.com/">Lucid Motors</a>. 
-            I completed my <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">M.S. in Computer Vision (MSCV)</a> at CMU, 
-            and earned my B.S. in Mathematics from <a href="https://www.wku.edu.cn/">Wenzhou-Kean University (WKU)</a>, 
-            where I worked with <a href="https://wku.edu.cn/faculty/gaurav-gupta/">Dr. Gaurav Gupta</a>.
+             
+            I earned my <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">M.S. in Computer Vision (MSCV)</a> at CMU
+            and my B.S. in Mathematics from <a href="https://www.wku.edu.cn/">Wenzhou-Kean University (WKU)</a>, 
+            where I worked with <a href="https://wku.edu.cn/faculty/gaurav-gupta/">Dr. Gaurav Gupta</a>. 
+            
+            I have industry experience at <a href="https://waymo.com/">Waymo</a>, <a href="https://www.momenta.cn/">Momenta</a>, 
+            and <a href="https://lucidmotors.com/">Lucid Motors</a>.
             </p>
 
               <p>
-                Email1: shenzhen@andrew.cmu.edu
+                Email: shenzhen [at] andrew [dot] cmu [dot] edu
               </p>
 
-              <p>
-                Email2: lebronshenzheng@gmail.com
-              </p>
-
-              
 
               <p style="text-align:center">
                 <a href="images/Self/CV_ShenZheng.pdf">Resume</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=Y9VYfd8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/ShenZheng2000">Github</a> &nbsp/&nbsp
-                <!-- <a href="https://leetcode.com/LebronZheng/">Leetcode</a> &nbsp/&nbsp -->
-                <a href="https://www.zhihu.com/people/zheng-shen-21/posts">知乎</a>
+                <a href="https://github.com/ShenZheng2000">GitHub</a> &nbsp/&nbsp
+                <a href="https://www.zhihu.com/people/zheng-shen-21/posts">Zhihu</a>  &nbsp/&nbsp
+                <a href="https://www.xiaohongshu.com/user/profile/644433ad000000002a00a845">RedNote</a>
               </p>
               
             </td>
@@ -76,26 +73,25 @@
       since they are trained on many common-scene images with large uninformative regions.
       </p> -->
 
-  <p>
-  My research focuses on <strong>data- and compute-efficient learning</strong>
-  for autonomous vehicles and embodied AI. Representative works include:
-</p>
+    <p>
+      My research focuses on <strong>efficiency</strong> for autonomous vehicles
+      and embodied AI. Representative works include:
+    </p>
 
-<ul>
-  <li>
-    <strong>Scene Understanding:</strong>
-      <a href="#mapthunder">MapThunder</a>,
-      <a href="#roadwork">ROADWork</a>,
-    <a href="#instancewarp">Instance-Warp</a>
-  </li>
-
-  <li>
-    <strong>Generative Modeling:</strong>
-    <a href="#warpi2i">WarpI2I</a>,
-    <a href="#tpsence">TPSeNCE</a>
-  </li>
-</ul>
-
+    <ul>
+      <li>
+        <strong>Model Efficiency:</strong>
+        <a href="#maplightning">MapLightning</a>,
+        <a href="#warpi2i">WarpI2I</a>,
+        <a href="#instancewarp">Instance-Warp</a>
+      </li>
+      <li>
+        <strong>Data Efficiency:</strong>
+        <a href="#omnithermal">OmniThermal</a>,
+        <a href="#roadwork">ROADWork</a>,
+        <a href="#tpsence">TPSeNCE</a>
+      </li>
+    </ul>
 
 
      <!-- <li><strong>Label efficiency</strong>: Weak supervision with foundation-model pseudo-labels to reduce manual annotation.</li> -->
@@ -155,40 +151,81 @@
 
 
 
-<tr onmouseout="MapThunder_Stop()" onmouseover="MapThunder_start()" id="mapthunder">
+
+
+
+<tr onmouseout="OmniThermal_Stop()" onmouseover="OmniThermal_start()" id="omnithermal">
   <td style="padding:20px;width:25%;vertical-align:middle">
     <div class="one">
-      <div class="two" id='mapthunder_img'>
-      <img src="images/MapThunder/Teaser.png" width="160"></div>
-      <img src="images/MapThunder/Teaser.png" width="160">
+      <div class="two" id='omnithermal_img'>
+      <img src="images/OmniThermal/short_teaser.png" width="160"></div>
+      <img src="images/OmniThermal/short_teaser.png" width="160">
     </div>
     <script type="text/javascript">
-      function MapThunder_start() {
-        document.getElementById('mapthunder_img').style.opacity = "1";
+      function OmniThermal_start() {
+        document.getElementById('omnithermal_img').style.opacity = "1";
       }
 
-      function MapThunder_Stop() {
-        document.getElementById('mapthunder_img').style.opacity = "0";
+      function OmniThermal_Stop() {
+        document.getElementById('omnithermal_img').style.opacity = "0";
       }
-      MapThunder_Stop()
+      OmniThermal_Stop()
     </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
-      <papertitle>MapThunder: Online Vectorized HD Map Construction with Compressed Tokens</papertitle>
+      <papertitle>OmniThermal: One-Step RGB-to-Thermal Translation for Drone, Satellite, Ground, and Driving Perception</papertitle>
     <a href="#research-areas">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
     <br>
     <strong>Shen Zheng</strong>, et al.
     <br>
+    <em style="display: block; margin: 10px 0 -5px;">
+      <strong style="color: red;">Coming Soon!</strong>
+    </em>
+    <br>
+    <p>
+      We propose a unified one-step RGB-to-thermal translation model that benefits downstream tasks
+      in drone, satellite, ground, and driving scenarios.
+    </p>
+
+  </td>
+</tr>
+
+
+<tr onmouseout="MapLightning_Stop()" onmouseover="MapLightning_start()" id="maplightning">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='maplightning_img'>
+      <img src="images/MapLightning/Teaser.png" width="160"></div>
+      <img src="images/MapLightning/Teaser.png" width="160">
+    </div>
+    <script type="text/javascript">
+      function MapLightning_start() {
+        document.getElementById('maplightning_img').style.opacity = "1";
+      }
+
+      function MapLightning_Stop() {
+        document.getElementById('maplightning_img').style.opacity = "0";
+      }
+      MapLightning_Stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+      <papertitle>MapLightning: Online Vectorized HD Map Construction with 1D Map Tokens</papertitle>
+    <a href="#research-areas">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <br>
+    <strong>Shen Zheng</strong>, Anurag Ghosh, Mani Ramanagopal, Srinivasa Narasimhan
+    <br>
     <em style="display: block; margin: 10px 0 -5px;"> 
       <strong style="color: red;">Coming Soon!</strong> 
     </em>
     <br>
     <p>
-      We propose an online vectorized HD map construction method 
-      that features fewer tokens, faster inference, and higher accuracy 
-      while generalizing effectively to 3D detection and trajectory prediction tasks. 
+      We propose an online vectorized HD map construction method with 1D map representation
+      that features fewer tokens, less memory, faster inference, and higher accuracy.
     </p>
 
   </td>
