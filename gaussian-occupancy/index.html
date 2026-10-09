@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Gaussian-based 3D Occupancy and World Model.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaussian-based 3D Occupancy and World Model</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Gaussian-based 3D Occupancy and World Model</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Key Designs Inspired by Related Works<sup><a href="#references">[a&ndash;d]</a></sup></h2>
+        <div class="content is-size-5">
+          <img src="./static/images/overview.png" class="publication-image" alt="Method overview" />
+          <ul style="display: inline-block; text-align: left;">
+              <li><strong>Multimodal Gaussians (steps 1&ndash;3):</strong> LiDAR points and multi-view RGB images are combined to build the 3D Gaussians.</li>
+              <li><strong>3D Annotation-Free (step 4):</strong> Gaussians are rendered to 2D and supervised with pseudo labels (no manual 3D labels).</li>
+              <li><strong>Future Gaussian motion (step 6):</strong> predicts future occupancy to support world modeling and long-horizon thinking.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="references">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-4 has-text-centered">References</h2>
+    <div class="content">
+      <ul style="list-style: none; margin-left: 0;">
+        <li><span style="display:inline-block; width:2em;">[a]</span>GaussianFormer: Scene as Gaussians for Vision-Based 3D Semantic Occupancy Prediction, ECCV 2024.</li>
+        <li><span style="display:inline-block; width:2em;">[b]</span>OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving, ECCV 2024.</li>
+        <li><span style="display:inline-block; width:2em;">[c]</span>GaussianFlowOcc: Sparse and Weakly Supervised Occupancy Estimation using Gaussian Splatting and Temporal Flow, ICCV 2025.</li>
+        <li><span style="display:inline-block; width:2em;">[d]</span>GaussianFormer-3D: Multi-modal Gaussian-based Semantic Occupancy Prediction with 3D Deformable Attention, ICRA 2026.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
